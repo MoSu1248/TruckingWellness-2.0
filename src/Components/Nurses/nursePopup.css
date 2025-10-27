@@ -1,0 +1,11 @@
+.nurse-edit-container{
+    
+    width: 40%;
+    padding: 40px 20px;
+    border-top: none;
+    background-color: var(--primary-backColor);
+  margin: auto;
+  border-radius: 20px;
+  border-bottom: 1px solid var(--primary-Tab-toplink);
+  border: 1px solid transparent;
+}

@@ -1,0 +1,57 @@
+
+.grid-bar-container {
+  width: 50%;
+  display: flex;
+  gap: 4px;
+}
+
+.grid-bar-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid-bar-item p {
+  margin-left: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.grid-bar {
+  border-radius: 20rem;
+  padding: 1rem;
+  color: white;
+}
+
+.negative {
+  background-color: #303030;
+}
+
+.positive {
+  background-color: #ef745b;
+}
+
+.other {
+  border: 1px solid white;
+}
+
+.flag {
+  border: 1px solid #959799;
+
+  color: black;
+}
+
+.bar__negative {
+  width: 15%;
+}
+
+.bar__positive {
+  width: 15%;
+}
+
+.bar__other {
+  width: 60%;
+}
+
+.bar__flag {
+  width: 10%;
+}

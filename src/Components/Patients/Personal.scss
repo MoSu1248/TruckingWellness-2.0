@@ -1,0 +1,38 @@
+.personal-wrapper {
+  padding: 1rem 3rem;
+}
+
+.patient__portfolio-container {
+  border-radius: 30px;
+  font-family: "Inter", sans-serif;
+  color: var(--primary-text);
+  display: grid;
+  transition: all 0.3s ease;
+  margin: auto 0;
+  margin-left: auto;
+  height: 80vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 400px);
+  width: 100%;
+  margin-top: 0.5rem;
+  gap: 4px;
+  height: 100%;
+
+  .dashboard__users {
+    grid-column-start: 1;
+  }
+}
+
+.section-container {
+  display: flex;
+  width: 100%;
+}
+
+.patients-personal-lower-container {
+  width: 100%;
+  display: flex;
+}
+
+.patients-img {
+  height: 2rem;
+}

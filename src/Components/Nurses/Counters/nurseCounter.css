@@ -1,0 +1,48 @@
+.nurse-counter-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    border-radius: 20px;
+    min-width: 20px;
+    width: 30.3%;
+    word-wrap: break-word;
+    background: var(--primary-backColor);
+    -webkit-background-clip: border-box;
+    box-shadow: var(--primary-contShadow);  
+      border-radius: 10px;
+    margin-left: 2rem;
+}
+
+.nurse-counter-content-container{
+display: flex;
+
+}
+
+.counter-icon{
+    font-size: 4rem;
+    color: var(--primary-Tab-toplink);
+   
+    margin: auto 0.5rem auto 1rem;
+    background-color: var(--primary-appBack);
+        padding: 1rem;
+    border-radius: 100%;
+}
+
+.counter-details-container{
+    width: 90%;
+  padding: 1rem;
+}
+
+.counter-header{
+    color: var(--primary-Tab-toplink);
+margin: auto;
+font-weight: 600;
+font-size: 1rem;
+}
+
+.counter-no{
+    margin: auto;
+    color: var(--primary-text);
+    font-size: 1.8rem;
+    font-weight: 700 ;
+}

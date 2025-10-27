@@ -1,0 +1,36 @@
+.backdrop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--backdrop);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    overflow-y: scroll;
+}
+
+.close-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    border-radius: 10px;
+  background-color: var(--primary-backColor);
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  font-weight: 700;
+  color: var(--primary-text);
+  transition: 0.3s ease;
+  height:fit-content;
+  text-align: center;
+  font-size: 1.5rem;
+  border: 1px solid transparent;
+margin-top: 1rem;
+margin-right: 10%;
+}
+
+.close-btn:hover{
+    transform: scale(1.2);}

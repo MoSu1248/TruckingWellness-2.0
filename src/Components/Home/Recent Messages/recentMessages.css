@@ -1,0 +1,156 @@
+.nurse-dash-messages-container {
+  width: 40rem;
+  border-radius: 60px;
+  padding: 1.7rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.568);
+  backdrop-filter: blur(14px) saturate(180%);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin: 0 !important;
+}
+
+.nurse-dash-messages-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.35),
+    rgba(255, 255, 255, 0.05)
+  );
+  pointer-events: none;
+}
+
+.heading-icon-container-requests {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+  color: black;
+}
+
+.icon-styling {
+  font-size: 2rem;
+  color: #ef745b;
+  margin-right: 0.5rem;
+}
+
+.request-login-heading {
+  color: #1d1d1d;
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  margin: auto 0;
+}
+
+.viewbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.856);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  transition: all 0.3s ease;
+  transform: rotate(-45deg);
+}
+
+.viewbtn:hover {
+  transform: scale(1.1) rotate(-45deg);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.chev-styling {
+  color: #ef745b;
+}
+
+.nurse-message-container {
+  overflow-y: auto;
+  flex: 1;
+  padding-right: 0.5rem;
+  mask-image: linear-gradient(to bottom, black 90%, transparent);
+}
+
+.nurse-message-container::-webkit-scrollbar {
+  width: 6px;
+}
+.nurse-message-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.nurse-message-container {
+  overflow-y: auto;
+  flex: 1;
+  padding-right: 0.5rem;
+  mask-image: linear-gradient(to bottom, black 90%, transparent);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.1) transparent;
+}
+
+.nurse-message-container::-webkit-scrollbar {
+  width: 6px;
+}
+.nurse-message-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.nurse-requests-container {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  padding: 0.8rem;
+  margin-bottom: 0.8rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.nurse-requests-container:hover {
+  background: rgba(255, 255, 255, 0.856);
+  transform: translateY(-2px);
+}
+
+.request-icon {
+  font-size: 1.2rem;
+  color: #ef745b;
+  margin-right: 0.8rem;
+}
+
+.nurse-requests-info-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dash-request-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.user__name {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.date-request {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.request-heading-dash {
+  color: #555;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin: 0;
+}

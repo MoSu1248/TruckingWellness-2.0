@@ -1,0 +1,60 @@
+import React, { useState, useEffect , useReducer } from "react";
+import {  useNavigate } from "react-router-dom";
+
+import {
+  collection,
+  getDocs,
+} from "firebase/firestore";
+import { db } from "../firebaseConfig/firebase";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+import "./Requests.css";
+import Banner from "../Banner/Banner";
+import RequestNav from "./RequestsNav";
+import RequestSelection from "./RequestSelection";
+
+const MySwal = withReactContent(Swal);
+export default function Show({props}){
+  const [reducerValue, forceUpdate] = useReducer(x => x+1 ,0)
+  const [search, setSearch] = useState("");  
+  const [requests, setrequests] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postPerPage, setPostPerPage] = useState(20);
+  const [RequestCount, setRequestCount] = useState(0);
+  const [path, setpath] = useState("Requests_Deleted");
+  const [art, setart] = useState("");
+  const lastPostIndex = currentPage * postPerPage;
+  const firstPostIndex = lastPostIndex - postPerPage;
+  const currentPostIndex = requests.slice(firstPostIndex, lastPostIndex);
+  const navigate = useNavigate();
+  const [openProfile, setOpenProfile] = useState(false);
+  const requestsCollection = collection(db, "Requests_Deleted");
+
+  useEffect(() => {
+    async function getrequests() {
+      const data = await getDocs(requestsCollection);
+      setrequests(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+  
+    };
+    getrequests();
+    
+  }, [reducerValue]);
+
+  function refresh(ignored) {
+    forceUpdate(ignored);
+  }
+
+  return (
+    <>
+      <div className="wrapper requests-wrapper">
+        <Banner title="Inbox" />
+        <div className="request-container">
+          <RequestNav active3={"Yes"}/>
+          <RequestSelection path = {`Requests_Deleted`} />
+         
+        </div>
+        
+      </div>
+    </>
+  );
+};

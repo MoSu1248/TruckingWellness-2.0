@@ -1,0 +1,188 @@
+/* --- WRAPPER --- */
+.newnurse-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+/* --- MAIN REGISTER CARD --- */
+.register-container {
+  width: 55%;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.register-container:hover {
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* --- HEADER / ICON --- */
+.heading-icon-main-pages {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.injured-user-icon,
+.MdGroupAdd {
+  font-size: 2.5rem;
+  color: var(--primary-accent);
+}
+
+.register-heading {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+}
+
+/* --- FORM SECTIONS --- */
+.nurse_info_form_container,
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.nurse_info_form_container:last-child,
+.register-form:last-child {
+  border-bottom: none;
+}
+
+/* --- LABELS & HEADINGS --- */
+
+.data-input h6 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 0.3rem;
+}
+
+.data-input label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 0.3rem;
+}
+
+/* --- INPUTS --- */
+.nurse_input,
+.password-field {
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.2);
+  color: black;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.nurse_input::placeholder,
+.password-field::placeholder {
+  color: var(--primary-colorTwGrey1);
+}
+
+.nurse_input:focus,
+.password-field:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  border-color: var(--primary-colorTwGrey1-lighter);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.25);
+}
+
+.nurse_input:hover,
+.password-field:hover {
+  border-color: var(--primary-colorTwGrey1);
+  cursor: pointer;
+}
+
+/* --- SHOW PASSWORD CHECKBOX --- */
+.showPassword-label {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  color: black;
+}
+
+.box-label {
+  margin-right: 0.5rem;
+}
+
+/* --- TOOLTIP --- */
+.tooltip-toggle {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip-toggle::before {
+  content: attr(aria-label);
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--tool-tip);
+  color: var(--primary-backColor);
+  font-size: 0.75rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: 0.3s ease;
+}
+
+.tooltip-toggle:hover::before,
+.tooltip-toggle:focus::before {
+  opacity: 1;
+}
+
+/* --- SUBMIT BUTTON --- */
+.btn-signup {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.css-1f1mtmi {
+  padding: 0.7rem 1.2rem;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: white;
+  color: #ef745b;
+
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.css-1f1mtmi:hover {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+/* --- RESPONSIVE --- */
+@media screen and (max-width: 1024px) {
+  .register-container {
+    width: 90%;
+    padding: 1.5rem 1rem;
+  }
+}

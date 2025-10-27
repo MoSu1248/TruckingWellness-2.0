@@ -1,0 +1,39 @@
+.pieChart-container{
+    padding: 10px ;
+    min-width: 0px;
+    word-wrap: break-word;
+    background: var(--primary-backColor);
+    -webkit-background-clip: border-box;
+    margin-left:2rem;
+    margin-right: 1rem;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: var(--primary-contShadow);
+    border-radius: 10px;
+    color: red !important;
+    fill: white;
+}
+
+text{
+    fill: white;
+}
+
+.MuiChartsLegend-series{
+    fill: white;
+}
+
+.css-1u0lry5-MuiChartsLegend-root{
+    fill: white;
+};
+
+.piechart{
+    fill: white !important;
+}
+
+.MuiChartsAxis-directionX{
+    background-color: red;
+}

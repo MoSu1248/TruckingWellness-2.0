@@ -1,0 +1,48 @@
+.options {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  background: var(--primary-backColor);
+  box-shadow: var(--primary-contShadow);
+  color: inherit;
+  min-width: unset;
+
+  z-index: 1;
+  border-radius: 10px;
+  border-width: 1px;
+  width: 15%;
+  border: transparent;
+  -webkit-backdrop-filter: blur(63px);
+  backdrop-filter: blur(63px);
+  padding: 15px;
+  position: absolute;
+  border: 1px solid var(--primary-colorTwGrey2-lighter);
+}
+
+.options-container {
+  margin: auto 0 auto auto;
+
+  transition: 0.2s ease-in;
+}
+
+.flex-container-recent-patients {
+  min-height: 4rem;
+  margin: 0;
+}
+
+.RecenetFlagged-container {
+  grid-column: 4 / span 2; /* starts at column 4, spans 2 columns */
+  grid-row: 1 / span 2; /* starts at row 1, spans 2 rows */
+  width: 100%;
+  width: 25rem;
+  background: rgba(255, 255, 255, 0.568);
+  border-radius: 40px;
+  padding: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(14px) saturate(180%); /* frosted glass */
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Inter", sans-serif;
+}

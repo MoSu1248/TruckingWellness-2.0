@@ -1,0 +1,12 @@
+.dashboard__users {
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  grid-column: span 1;
+  border-radius: 60px;
+  .dashboard__image {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+  }
+}

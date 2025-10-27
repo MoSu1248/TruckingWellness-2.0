@@ -1,0 +1,175 @@
+:root {
+  --primary-colorrTwRed: #c1151bd3;
+  --primary-colorrTwRed3: #c1151bce;
+  --primary-colorrTwRed2: #c1151b;
+  --primary-backColor: #ffffff;
+  --primary-viewbtnColor: #ffffff;
+  --primary-nav-back-color: #ffffff;
+  --primary-text: #1b254b;
+  --primary-colorTwGrey1-lighter: #8f9bba93;
+  --primary-colorTwGrey1-lighter2: #8f9bba4d;
+  --primary-colorTwGrey1-lighter3: #8f9bba49;
+  --primary-colorTwGrey1: #8f9bba;
+  --primary-colorTwGrey2-lighter: #a0aeca3f;
+  --primary-colorTwGrey2-lighter2: #a0aec059;
+  --primary-colorTwGrey2-lighter3: #a0aecab0;
+  --primary-colorTwGrey2-lighter4: #a0aeca1a;
+  --primary-colorTwGrey2-lighter5: #a0aeca54;
+  --primary-colorTwGrey2: #a0aeca;
+  --primary-colorTwText: 14px;
+  --primary-colorTwheader: 14px;
+  --primary-navBackColor: #232323;
+  --primary-headerColor: #818ca8;
+  --primary-bannerBack: rgba(244, 247, 254, 0.2);
+  --primary-dropDownShadow: rgba(112, 144, 176, 0.08);
+  --primary-BannerbackgroundColor: #2d2c3e;
+  --primary-BannerbackgroundColor-darker: #2d3748c5;
+  --primary-appBack: #f4f7fe;
+  --primary-info-data-color: #2d3748;
+  --backdrop: #000000c0;
+  --tool-tip: #1b254be0;
+  --smoke: whitesmoke;
+  --navHovericon: #fafafa;
+  --navblack: black;
+  --navtitle: #8f8f8f;
+  --xn-background: rgba(135, 140, 189, 0.3);
+  --nav-after-background: rgba(226, 217, 217, 0.938);
+  --css-1f1mtmi-hover: #fdfdfdd0;
+  --online-green: rgba(2, 196, 99, 0.884);
+  --table-hover: rgba(222, 226, 230, 0.288);
+  --table-header-back: rgba(160, 174, 202, 0.103);
+  --loginBackground: rgba(255, 255, 255, 0.7);
+  --loginshadow: #a0aeca75;
+  --calender-background: rgba(255, 255, 255, 0.1);
+  --counter-no: #373944;
+  --nth-child-back-color: rgba(243, 243, 243, 0.521);
+
+  --primary-Tab-toplink: #2d3748;
+  --primary-Tab-toplink-darker: #2d37483f;
+  --primary-Tabs-h2: #222;
+  --primary-Tab-p: #555;
+  --primary-Tab-pane: #333;
+  --primary-appointmentDataBorder: #e0e5f2;
+  --primary-nav-box-shadows: 14px 17px 40px 4px rgba(167, 170, 173, 0.18);
+
+  --primary-dashRecentPBack: rgb(160 174 202 / 7%);
+
+  --primary-submitbtnsOffWhite: #eee;
+  --primary-bottom-border-table: #ececec;
+  --primary-submitbtnsback: #ce595d;
+
+  --primary-ScrollTrackBack: hsl(225.71deg 20.79% 80.2%);
+  --primary-ScrollThumbBack: hsla(225, 17%, 63%, 0.808);
+
+  --primary-formBorderColor: #3f3f3f;
+  --primary-submitBtnBorder: #8f8f8f;
+  --primary-appointment-hover-container: 0 13px 40px -5px hsla(240, 30.1%, 28%, 0.12),
+    0 8px 32px -8px hsla(0, 0%, 0%, 0.14),
+    0 -6px 32px -6px hsla(0, 0%, 0%, 0.02) #8f8f8f;
+
+  --primary-contShadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  --primary-contlesserShadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  --filter-border-top: rgba(128, 128, 128, 0.089);
+  --primary-colorBorder: 14px;
+}
+
+[data-theme="dark"] {
+  --primary-colorrTwRed: #c1151bd3;
+  --primary-colorrTwRed4: #c1151b57;
+  --primary-colorrTwRed3: #c1151bce;
+  --primary-colorrTwRed2: #c1151b;
+  --primary-backColor: #191d23;
+  --primary-nav-back-color: #ffffff;
+  --primary-viewbtnColor: #dddddd;
+  --primary-text: #dddddd;
+  --primary-colorTwGrey1-lighter: #8f9bba93;
+  --primary-colorTwGrey1-lighter2: #8f9bba4d;
+  --primary-colorTwGrey1-lighter3: #8f9bba49;
+  --primary-colorTwGrey1: #8f9bba;
+  --primary-colorTwGrey2-lighter: #a0aeca3f;
+  --primary-colorTwGrey2-lighter2: #a0aec059;
+  --primary-colorTwGrey2-lighter3: #a0aecab0;
+  --primary-colorTwGrey2-lighter4: #a0aeca1a;
+  --primary-colorTwGrey2-lighter5: #a0aeca54;
+  --primary-colorTwGrey2: #a0aeca;
+  --primary-colorTwText: 14px;
+  --primary-colorTwheader: 14px;
+  --primary-navBackColor: #232323;
+  --primary-headerColor: #818ca8;
+  --primary-bannerBack: rgba(244, 247, 254, 0);
+  --primary-dropDownShadow: rgba(112, 144, 176, 0.08);
+  --primary-BannerbackgroundColor: #2d2c3e;
+  --primary-BannerbackgroundColor-darker: #dddddd;
+  --primary-appBack: #0d0f11;
+  --primary-info-data-color: #dddddd;
+  --smoke: whitesmoke;
+  --navHovericon: #fafafa;
+  --navblack: black;
+  --navtitle: #8f8f8f;
+  --xn-background: rgba(135, 140, 189, 0.3);
+  --nav-after-background: rgba(226, 217, 217, 0.938);
+  --css-1f1mtmi-hover: #fdfdfdd0;
+  --online-green: rgba(2, 196, 99, 0.884);
+  --table-hover: rgba(222, 226, 230, 0.288);
+  --table-header-back: rgba(160, 174, 202, 0.103);
+  --loginBackground: rgba(255, 255, 255, 0.7);
+  --loginshadow: transparent;
+  --calender-background: rgba(255, 255, 255, 0.1);
+  --counter-no: #373944;
+  --nth-child-back-color: rgba(243, 243, 243, 0.137);
+  --backdrop: #000000c0;
+  --tool-tip: #888c9be0;
+
+  --primary-Tab-toplink: #dddddd;
+  --primary-Tab-toplink-darker: #8f9bba;
+  --primary-Tabs-h2: #222;
+  --primary-Tab-p: #555;
+  --primary-Tab-pane: #333;
+  --primary-appointmentDataBorder: #e0e5f2da;
+  --primary-nav-box-shadows: 14px 17px 40px 4px rgba(80, 80, 80, 0.18);
+
+  --primary-dashRecentPBack: rgb(160 174 202 / 7%);
+
+  --primary-submitbtnsOffWhite: #eee;
+  --primary-bottom-border-table: #ececec;
+  --primary-submitbtnsback: #ce595d;
+
+  --primary-ScrollTrackBack: hsl(225.71deg 20.79% 80.2%);
+  --primary-ScrollThumbBack: hsla(225, 17%, 63%, 0.808);
+
+  --primary-formBorderColor: #3f3f3f;
+  --primary-submitBtnBorder: #8f8f8f;
+  --primary-appointment-hover-container: 0 13px 40px -5px hsla(240, 30.1%, 28%, 0.12),
+    0 8px 32px -8px hsla(0, 0%, 0%, 0.14),
+    0 -6px 32px -6px hsla(0, 0%, 0%, 0.02) #8f8f8f;
+
+  --primary-contShadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  --primary-contlesserShadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  --filter-border-top: rgba(128, 128, 128, 0.089);
+  --primary-colorBorder: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.App {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  background: #e3e5e6;
+  background: linear-gradient(
+    90deg,
+    rgba(227, 229, 230, 1) 0%,
+    rgba(235, 133, 112, 1) 100%
+  );
+  overflow: hidden;
+}

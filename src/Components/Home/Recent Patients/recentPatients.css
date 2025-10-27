@@ -1,0 +1,91 @@
+.dash-recent-patients {
+  height: 22rem;
+  width: 22rem;
+  background: rgba(255, 255, 255, 0.568);
+  border-radius: 60px;
+  padding: 1.7rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(14px) saturate(180%); /* frosted glass */
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Inter", sans-serif;
+  grid-row: 2/2;
+}
+
+.recent-patients-scroll {
+  overflow-y: auto;
+  flex: 1;
+  padding-right: 0.5rem;
+  mask-image: linear-gradient(to bottom, black 90%, transparent);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.1) transparent;
+}
+
+.recent-patients-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.recent-patients-scroll::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+details {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 1rem 0;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+details:hover {
+  background: rgba(250, 240, 240, 0.6);
+  transform: translateY(-2px);
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #2a2a2a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+summary::marker {
+  display: none;
+}
+
+.nurse-recent-patients-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.6rem;
+  gap: 1rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  border-left: 3px solid rgba(243, 157, 157, 0.6);
+  padding-left: 0.8rem;
+}
+
+.info-text {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 0;
+}
+
+details[open] summary {
+  color: #ef745b; /* muted warm red accent */
+}
+
+details[open] .nurse-recent-patients-info {
+  background: #fff7f7;
+  border-radius: 8px;
+  padding: 0.8rem;
+}

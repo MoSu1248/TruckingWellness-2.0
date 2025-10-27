@@ -1,0 +1,28 @@
+.lineGraph-container{
+    padding: 0.5rem ;
+    border-radius: 20px;
+    min-width: 0px;
+    word-wrap: break-word;
+    background: var(--primary-backColor);
+    -webkit-background-clip: border-box;
+    margin-left: 3rem;
+    width: 50%;
+    border: transparent;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: var(--primary-contShadow);
+    border-radius: 10px;
+    height: 35vh;
+}
+
+.linechart-container{
+    width: 58%;
+}
+
+.dash-header-styling{
+    width: 100%;
+
+}

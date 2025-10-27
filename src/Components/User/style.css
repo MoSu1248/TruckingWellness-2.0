@@ -1,0 +1,61 @@
+
+  .user__name {
+    font-weight: 500;
+    width: 50%;
+    font-size: 0.9rem;
+    font-weight: 650;
+    height: fit-content;
+    color: var(--primary-text);
+    text-overflow: ellipsis;
+      white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+
+  .user__placeholder {
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.3rem;
+    display: grid;
+    color: var(--primary-backColor);
+    place-items: center;
+    border-radius: 15px;
+    font-size: 0.875rem;
+
+  }
+
+  .user{
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .Avatar {
+    color: var(--primary-backColor);
+    width: 2.3rem;
+    height: 2.3rem;
+    line-height: 2.3rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 100%;
+ margin: 0;
+ opacity: 0.2;
+  padding: 0;
+
+  }
+  
+ .intials{
+  margin: auto;
+  height: 100%;
+
+  width: 100%;
+ }
+
+ .color{
+display: none;  
+ }

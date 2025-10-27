@@ -1,0 +1,131 @@
+.message-details-container{
+    height: 90%;
+  padding: 1.5rem;
+}
+
+.request-date-styling{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #a0aec0;
+    min-height: 2rem;
+
+}
+
+.request-title-styling{
+    color: #2d3748;
+    min-height: 2rem;
+}
+.request-greeting{
+    margin-top: 2rem;
+    font-size: 1rem;
+    width: 95%;
+
+}
+.request-details{
+    margin-top: 2rem;
+    width: 95%;
+    height: 60%;
+    min-height: 60%;
+    font-size: 1rem;
+
+}
+
+.request-btn-container{
+    width: 95%;
+    text-align: end;
+    margin-top: 4rem;
+}
+
+.container-hide{display: none;}
+
+.request-delete-icon{
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+
+.request-delete-btn {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: middle;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    width: 20%;
+    line-height: 1.2;
+    border-radius: 10px;
+    font-weight: 400;
+    transition-property: background-color, border-color, color, fill, stroke,
+      opacity, box-shadow, transform;
+    transition-duration: 200ms;
+    /* box-shadow: 45px 76px 113px 7px rgba(112, 144, 176, 0.08); */
+    -webkit-transition: 0.25s all ease;
+    transition: 0.25s all ease;
+    box-sizing: border-box;
+    height: 2.5rem;
+    min-width: 2.5rem;
+    font-size: 0.9rem;
+    -webkit-padding-start: 1rem;
+    padding-inline-start: 1rem;
+    -webkit-padding-end: 1rem;
+    padding-inline-end: 1rem;
+    background: #c1151bce;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    border: transparent;
+    transition: 0.3s;
+  }
+  
+  .request-delete-btn:hover {
+    border-radius: 4px;
+    border: 1px solid #c1151bce;
+    background: #fdfdfdd0;
+    color: #c1151bce;
+    font-size: 1.1rem;
+  }
+
+  .fav-btn-container{
+
+  }
+
+
+  .star {
+    position: absolute;
+    display: block;
+    padding: 40vh 48vw;
+    fill: #CDCDCD;
+    transition: fill 200ms;
+    z-index: 1;
+  }
+  
+  .star.active {
+    fill: #FFA600;
+    animation: fav 600ms ease;
+  }
+  
+  @keyframes fav {
+    70% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

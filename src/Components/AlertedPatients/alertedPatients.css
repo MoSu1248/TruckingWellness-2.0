@@ -1,0 +1,268 @@
+
+/*  
+.msg-container {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  margin-top: 3rem;
+  border: 1px solid rgb(218, 215, 215);
+  flex-direction: column;
+  font-weight: 700;
+  min-height: 75vh;
+  border-radius: 6px;
+}
+
+.client-wrapper {
+  width: 100vw;
+
+  height: 100vh;
+}
+
+
+.info-nav {
+  display: flex;
+}
+.clients-header {
+  font-weight: bold;
+}
+
+.edit-icon {
+  color: #c1151b;
+  font-size: 2.5rem;
+}
+
+.list-style {
+  width: fit-content;
+  justify-content: center;
+  margin-top: 20px;
+}
+.list-style:hover {
+  border-top: none;
+  box-shadow: none;
+}
+
+
+
+.info-nav {
+  margin-top: 40px;
+}
+
+.detail-container {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+
+.information-container {
+  height: 100%;
+  border-radius: 6px;
+  border-bottom: 1px solid #3f3f3f !important;
+  min-height: 20vh;
+}
+
+.msg-container {
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #3f3f3f !important;
+}
+
+.content {
+  border-radius: 6px;
+  height: 58.5vh;
+}
+
+.list-container {
+  width: 70%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.list-contiainer li {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.nurse-details {
+  margin: 30px auto;
+  width: 50%;
+  justify-content: space-between;
+  min-height: 5rem;
+}
+
+.client-list-header{
+  font-weight: 700;
+  color: #1b254b;
+  font-family: "DM Sans", sans-serif;
+margin-left: 0.5rem;
+margin: auto;
+font-size: 1.8rem;
+}
+
+.contactinfo {
+  display: flex;
+  color: #676465;
+  font-weight: 200;
+}
+
+.contactinfo .patientID {
+  margin-right: 20px;
+  width: 20rem;
+  border-right: 1px #676465 solid;
+}
+
+.patient-name {
+  font-size: 1.5rem;
+  min-height: 2rem;
+}
+
+
+
+
+.patient-top-container {
+  border-radius: 5px;
+  width: 98%;
+
+  font-family: sans-serif;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border: 1px solid #dee2e6 !important;
+}
+
+
+
+.clients-table-row-header{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-align: start;
+  letter-spacing: 0.05rem;
+  line-height: 1rem;
+  color: #4A5568;
+  color: #1b254b;
+  background-color: rgb(160 174 202 / 7%);
+  border:1px solid #a0aec059;
+  border-bottom: none;
+}
+
+.patients-table-body-styling{
+  border:1px solid #a0aec059 
+}
+
+.search {
+  height: 5vh;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.row-styles .patients-table-data {
+  border-spacing: 0 15px;
+  text-align: left;
+  font-size: 0.85rem;
+  border-bottom:1px solid #a0aec059 ;
+  font-weight: 600;
+vertical-align: 90%;
+}
+.table-style-container{
+border-radius: 2rem;
+padding: 1rem;
+}
+
+td{
+  max-height: fit-content;
+}
+
+.end-block{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+.eye-icon {
+  margin-left: 12%;
+  margin-right: 20px;
+  font-size: 1.8rem;
+  color: #8f8f8f;
+}
+
+.eye-icon:hover {
+  color: #2615c1;
+}
+
+.arrow {
+  position: absolute;
+  border-radius: 5px 0 0 0;
+}
+
+
+
+
+
+
+.details-content {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  font-size: 1.1rem;
+  height: 100%;
+}
+
+.details-heading {
+  width: 150px;
+  font-size: 1.1rem;
+  height: 100%;
+  color: #3f3f3f;
+  font-weight: bold;
+}
+
+.details-container {
+  display: flex;
+  padding: 1.2rem 0;
+}
+
+.action-header {
+  text-align: center;
+}
+
+.hiv-header{
+  text-align: center;
+}
+
+.flag-header{
+  text-align: center;
+}
+
+.hiv-data{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+.details-heading {
+  width: 12rem;
+  text-align: start;
+}
+
+.heading-icon-main-pages{
+  display: flex;
+  padding: 0.5rem;
+}
+
+.dailyAppCount{
+  text-align: center;
+}*/

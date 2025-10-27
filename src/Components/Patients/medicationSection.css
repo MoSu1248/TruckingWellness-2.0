@@ -1,0 +1,134 @@
+/* --- MAIN WRAPPER --- */
+.med-top-wrapper {
+ width: 100%;
+  padding: 1.5rem 2rem;
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 60px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.med-top-wrapper:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* --- HEADER --- */
+.medication-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.appointment-timeline-header {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.viewbtn {
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: var(--primary-text);
+  border-radius: 10px;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.viewbtn:hover {
+  background-color: rgba(255, 255, 255, 0.45);
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+.chev-styling {
+  font-size: 1.1rem;
+}
+
+/* --- TABLE / ROW CONTAINER --- */
+.medication-top-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 18rem; /* scrollable height */
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem; /* spacing between rows */
+  padding-right: 0.5rem;
+}
+
+/* --- CARD-LIKE ROWS --- */
+.medication-table-row {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.25s ease;
+}
+
+.medication-table-row:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateX(4px);
+  cursor: pointer;
+}
+
+/* --- DATA CELLS --- */
+.med-data {
+  flex: 1;
+  padding: 0.75rem 0.5rem;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.med-data p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.admin {
+  font-size: 0.85rem;
+  max-width: 16rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* --- SCROLLBAR --- */
+.medication-top-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.medication-top-container::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.medication-top-container::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* --- RESPONSIVE --- */
+@media screen and (max-width: 768px) {
+  .med-data p {
+    font-size: 0.85rem;
+  }
+
+  .viewbtn {
+    padding: 0.3rem 0.6rem;
+  }
+}

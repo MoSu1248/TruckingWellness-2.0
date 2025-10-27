@@ -1,0 +1,314 @@
+/* --- WRAPPER & MAIN CONTAINER --- */
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.client-container {
+  width: 90%;
+  min-height: 78vh;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  border-radius: 30px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  font-family: "Inter", sans-serif;
+  color: var(--primary-text);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  
+}
+
+
+.client-container .viewbtn{
+  margin: auto;
+}
+
+/* .client-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+} */
+
+/* --- HEADER AREA --- */
+.clients-search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.heading-icon-main-pages {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.client-list-header {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+/* --- SEARCH BAR --- */
+.search-top-container {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.search-input {
+  font-weight: 600;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  padding: 0.7rem 1rem 0.7rem 2.2rem;
+  width: 320px;
+  background-image: url("../Resources/search_img.png");
+  background-repeat: no-repeat;
+  background-position: 0.7rem center;
+  background-size: 16px;
+  transition: all 0.25s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 0 2px var(--primary-colorTwGrey1-lighter);
+}
+
+/* --- BUTTONS --- */
+.search-btn-styling,
+.refresh-btn-styling,
+.refresh-btn {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  color: var(--primary-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  width: 3rem;
+  height: 3rem;
+  padding: 1rem;
+}
+
+.search-btn-styling {
+  width: fit-content;
+}
+
+.search-btn-styling:hover,
+.refresh-btn-styling:hover,
+.refresh-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.search-btn-styling span {
+  margin-left: 0.4rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* --- FILTER SECTION --- */
+.client-filter-container {
+  margin: 1rem 0;
+}
+
+.filter-containers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-state-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.Filter-label {
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.filter-state-status {
+  padding: 0.2rem 0.8rem;
+  border: 1px solid var(--online-green);
+  border-radius: 5px;
+  color: var(--online-green);
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.dropDownProfile_main {
+  position: absolute;
+  right: 1%;
+  top: 5rem;
+  background: rgba(255, 255, 255, 0.712);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 1.2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  width: 220px;
+  color: var(--primary-text);
+}
+
+.dropDownProfile_main .checkbox-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-btn-set {
+  margin-top: 1rem;
+  width: 100%;
+  border: 1px solid var(--primary-text);
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  background: transparent;
+  color: var(--primary-text);
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.filter-btn-set:hover {
+
+  transform: translateY(-2px);
+}
+
+/* --- TABLE --- */
+.table-style-container {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  overflow: hidden;
+  padding: 1rem;
+  margin-top: 1rem;
+  min-height: 60vh;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--primary-text);
+  text-align: center; /* centers all text horizontally */
+}
+
+.clients-table-row-header {
+  background: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+}
+
+.clients-table-row-header th {
+  padding: 0.9rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.patients-table-body-styling tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.2s ease;
+}
+
+.patients-table-body-styling tr:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.patients-table-data {
+  padding: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.hiv-data.class2 {
+  color: var(--online-green);
+  font-weight: 700;
+}
+
+.hiv-data.class1 {
+  height: 100%;
+}
+
+/* --- LINK ICON --- */
+.chev-styling {
+  font-size: 1.5rem;
+  color: var(--primary-text);
+  transition: transform 0.2s ease;
+}
+
+.chev-styling:hover {
+  transform: translateX(4px);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1024px) {
+  .client-container {
+    width: 95%;
+    padding: 1rem 1.2rem;
+    border-radius: 20px;
+    box-shadow: none;
+    backdrop-filter: blur(12px);
+  }
+
+  .clients-search-container {
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: stretch;
+  }
+
+  .heading-icon-main-pages {
+    justify-content: center;
+  }
+
+  .client-list-header {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .search-top-container {
+    justify-content: center;
+  }
+
+  .search-input {
+    width: 100%;
+    max-width: 220px;
+    font-size: 0.85rem;
+    padding: 0.6rem 0.9rem 0.6rem 2rem;
+    background-size: 14px;
+  }
+
+  .search-btn-styling {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .refresh-btn-styling,
+  .refresh-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .client-filter-container {
+    margin: 0.5rem 0;
+  }
+
+}
+
+
