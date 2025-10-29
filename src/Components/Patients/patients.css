@@ -1,10 +1,4 @@
-/* --- WRAPPER & MAIN CONTAINER --- */
-.wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
+
 
 .client-container {
   width: 90%;

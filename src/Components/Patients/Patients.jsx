@@ -127,7 +127,7 @@ const Show = () => {
           <>
             <div className="clients-search-container">
               <div className="heading-icon-main-pages">
-                <h4 className="client-list-header">Recent Client List</h4>
+                <h4 className="client-list-header">Recent Clients</h4>
               </div>
               <div className="search-top-container">
                 <form className="search-patients search-test">
@@ -236,7 +236,7 @@ const Show = () => {
                     </th>
                     <th className="hiv-header">HIV</th>
                     <th className="flag-header">Flagged</th>
-                    <th className="action-header">Action</th>
+                    <th className="action-header"></th>
                   </tr>
                 </thead>
                 <tbody className="patients-table-body-styling">

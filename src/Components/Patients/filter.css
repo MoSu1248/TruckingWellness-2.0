@@ -1,78 +1,81 @@
-.dropDownProfile{
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-    background: var(--primary-backColor);
-    box-shadow: 14px 17px 40px 4px var(--primary-dropDownShadow);
-    color: inherit;
-    min-width: unset;
-    
-    z-index: 1;
-    border-radius: 10px;
-    border-width: 1px;
-    width: 9%;
-    border: transparent;
-    -webkit-backdrop-filter: blur(63px);
-    backdrop-filter: blur(63px);
-    padding: 15px;
-    position: absolute;
-    border: 1px solid var(--primary-colorTwGrey2-lighter) ;
+.dropDownProfile {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  background: var(--primary-backColor);
+  box-shadow: 14px 17px 40px 4px var(--primary-dropDownShadow);
+  color: inherit;
+  min-width: unset;
+
+  z-index: 1;
+  border-radius: 10px;
+  border-width: 1px;
+  width: 9%;
+  border: transparent;
+  -webkit-backdrop-filter: blur(63px);
+  backdrop-filter: blur(63px);
+  padding: 15px;
+  position: absolute;
+  border: 1px solid var(--primary-colorTwGrey2-lighter);
 }
 
-
-
-
-.filter-header{
-    font-weight: 700;
-    color: var(--primary-text);
-    padding: 0 1rem ;
-    padding-bottom: 0.2rem;
-    border-bottom: var(--primary-colorTwGrey2-lighter3) 1px solid;
-    letter-spacing: 2px;
+.filter-header {
+  font-weight: 700;
+  color: var(--primary-text);
+  padding: 0 1rem;
+  padding-bottom: 0.2rem;
+  border-bottom: var(--primary-colorTwGrey2-lighter3) 1px solid;
+  letter-spacing: 2px;
 }
 
-
-.filter-btn-styling{
-    margin: 0.2rem;
-    margin: auto;
-    width: 100%;
-    text-align: center;
-    padding: 0.2rem;
-    background-color: transparent;
-    border: none;
-    width: 100%;
-    height: 100%;
-    font-weight: 500;
-    color: var(--primary-text);
-    transition: 0.2s ease;
-
+.filter-btn-styling {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  width: 3rem;
+  height: 3rem;
+  padding: 1rem;
+  cursor: pointer;
 }
 
-.filter-btn-styling:hover{
-    transition: 0.2s ease;
-    font-size: 1.1rem;
-    color: var(--primary-text);
-    font-weight: 600;
-    
-
+.filter-btn-styling:hover {
+  transition: 0.2s ease;
+  font-size: 1.1rem;
+  color: var(--primary-text);
+  font-weight: 600;
 }
 
-.filter-icon-styling{
-    color: var(--primary-text);
-    background-color: var(--primary-colorTwGrey2-lighter4);
-margin-top: 0.2rem;
+.filter-icon-styling {
+  background: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  color: #ef745b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  width: 3rem;
+  height: 3rem;
+  padding: 1rem;
+  cursor: pointer;
 }
 
-.filter-icon-styling:hover{
-    font-size: 1.3rem;
-    background-color: transparent;
-    cursor: pointer;
-    transition: 0.2s ease;
-    color: var(--primary-text);
-    border: 1px solid var(--primary-text)
+.filter-icon-styling:hover {
+  font-size: 1.3rem;
+  background-color: rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  transition: 0.2s ease;
+  border: 1px solid white;
+  transform: translateY(-2px);
 }
 
-.filter-btns{
-    margin: auto;
-    margin-top: 0.2rem;
+.filter-btns {
+  margin: auto;
+  margin-top: 0.2rem;
 }
-

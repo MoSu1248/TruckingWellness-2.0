@@ -9,6 +9,7 @@ import Folder from "../../Resources/folder.png";
 import { FaUserAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import AppointFilter from "./PatientsOptions";
+import AlertedPatients from "./AlertedPatients";
 
 export default function ChildrenList({ path, id }) {
   const weekday = [
@@ -41,33 +42,21 @@ export default function ChildrenList({ path, id }) {
   return (
     <>
       <div class="RecenetFlagged-container">
-        <thead className="nurse-recent-patients-header ">
-          <h6 className=" header_5 header_styling">Name </h6>
-          <h6 className="header_5 header_styling">Client ID</h6>
-          <h6 className="header_5 header_styling">Appointment Date</h6>
-          <h6 className="header_5 header_styling">Location</h6>
-        </thead>
-        <div class="dash-scrolling">
-          <div class="css-0">
-            <table className="nurese-recent-patients-table">
-              {docs?.map((doc) => (
-                <Link to={`/patients/Personal/${doc.clientID}`}>
-                  <tbody className="nurse-recent-patients-info">
-                    <p className="data-styling">{doc.Name} </p>
-                    <p className="data-styling">{doc.clientID}</p>
-                    <p className="data-styling">{doc.date}</p>
-                    <p className=" data-styling">{doc.Appointment_Location}</p>
-                    <AppointFilter
-                      appID={doc.Appointment_ID}
-                      appointmentPath={`/patients/appointment/${doc.clientID}`}
-                      clientPath={`/patients/Personal/${doc.clientID}`}
-                    />
-                  </tbody>
-                </Link>
-              ))}
-            </table>
+        <h6 className="request-login-heading">
+          Flagged Users: <span>5%</span>
+        </h6>
+        <div className="flagged-bars">
+          <div className="grid-bar-item bar__negative">
+            <p>5%</p>
+            <div className=" grid-bar negative">flagged</div>
+          </div>
+          <div className="grid-bar-item bar__positive">
+            <p> 95%</p>
+            <div className=" grid-bar positive">clean</div>
           </div>
         </div>
+
+        <AlertedPatients />
       </div>
     </>
   );

@@ -25,9 +25,9 @@
 }
 
 .general-info-header {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 700;
-  color: var(--primary-text);
+  margin: auto 1rem;
 }
 
 .viewbtn {

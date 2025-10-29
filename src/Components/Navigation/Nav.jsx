@@ -57,7 +57,7 @@ const Nav = () => {
               <NavLink
                 to={item.link}
                 className={({ isActive }) => {
-                  return isActive ? "active  nav-link" : "non-active nav-link";
+                  return isActive ? "active nav-link" : "non-active nav-link";
                 }}
               >
                 {item.title}

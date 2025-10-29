@@ -1,94 +1,130 @@
-.requestsNav-line-styling{
-list-style:none;
-padding: 0;
-width: 100%;
+.requestsNav-container {
+  display: flex;
+  flex-direction: column;
+  width: 17%;
+  height: 96%;
+  margin: auto;
+  border-radius: 40px;
+  padding: 3rem 1rem;
+
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
 }
 
-.requestsNav-container{
-    
-    display: flex;
-    flex-direction: column;
-    width: 17%;
-    color: var(--primary-backColor);
-    background: var(--primary-navBackColor);
-    background-color: var(--primary-backColor);
-    height: 98%;
-    margin: auto;
-    margin-left: 1rem;
-    transition: 0.3s ;
-    zoom: 90%;
-    padding: 1rem;
-    padding-top: 2.5rem;
-    border-radius: 20px;
+/* header section at top of sidebar */
+.nav-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.requestLink{
-    font-family: "DM Sans", sans-serif;
-    font-weight: 500;
-    letter-spacing: 2px;
- position: relative;
-align-items: center;
-padding: 0.7rem 1.1rem;
-border-radius: 3px;
-cursor: pointer;
-transition: background-color.2s ease;
-margin-top: 18px;
-color: var(--primary-colorTwGrey2);
-width: 100%;
-font-size: 1rem;
-color: var( --primary-Tab-toplink);
-display: flex;
-justify-content: space-between;
-transition: 0.2s ease-in ;
+.requests-nav-icon {
+  font-size: 1.5rem;
+  opacity: 0.85;
+  transition: transform 0.2s ease;
 }
 
-.requestLink:hover{
-    color: var(--primary-Tab-toplink);
-
-font-weight: 600;
+.requests-nav-icon:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
 
-.req-active-link{
-    color: var(--primary-Tab-toplink);
-    font-size: 1.1rem;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: 0.2s ease-in ;
-    border-radius: 5px;
-    border: 0.2px solid var(--primary-Tab-toplink-darker);
-    pointer-events: none;
+/* nav list */
+.requestsNav-line-styling {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.request-inbox{
-    margin-right: 1rem;
+/* nav links */
+.requestLink {
+  font-weight: 500;
+  letter-spacing: 1px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  margin-bottom: 0.8rem;
+  transition: all 0.25s ease;
+  color: blaCK;
 }
 
-.request-title-container{
-    display: flex;
-    width: 80%;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
+.requestLink:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: translateY(-2px);
+  font-weight: 600;
+  color: blaCK;
 }
 
-.request-title-container p{
-    margin: auto;
+/* active link */
+.req-active-link {
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  pointer-events: none;
+  color: #ffffff;
+  background-color: #303030;
 }
 
-.nav-header-container{
-    border-bottom: 1px solid var(--primary-Tab-toplink-darker);
-    margin: 0%;
+/* inside icon/text container */
+.request-title-container {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.request-title-container p {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* small icon beside text */
+.request-inbox {
+  margin-right: 0.6rem;
+  font-size: 1.1rem;
+  color: var(--primary-text);
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.requestLink:hover .request-inbox {
+  opacity: 1;
+}
+
+/* responsive */
+@media (max-width: 1024px) {
+  .requestsNav-container {
     width: 100%;
-    height: 5rem;
-    margin:0 auto;
-    display: flex;
-    justify-content: space-between;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
     padding: 1rem;
-}
+    margin-left: 0;
+    border-radius: 15px;
+  }
 
-.requests-nav-icon{
-    margin: auto;
-    font-size: 1.4rem;
+  .requestsNav-line-styling {
+    display: flex;
+    gap: 0.5rem;
+  }
 
+  .requestLink {
+    flex-direction: column;
+    padding: 0.6rem;
+    font-size: 0.85rem;
+    border-radius: 8px;
+  }
 }
-    

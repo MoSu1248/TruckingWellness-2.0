@@ -49,32 +49,22 @@ export default function ChildrenList({ path, id }) {
 
   return (
     <>
-      <div class=" border-styling dash-recent-container-styling">
-        <thead className="nurse-recent-patients-header dash-recent-patients">
-          <h6 className="header_5 header_styling">Name & ID</h6>
-          <h6 className="header_5 header_styling">Client ID</h6>
-          <h6 className="header_5 header_styling">Appointment Date</h6>
-          <h6 className="header_5 header_styling">Location</h6>
-        </thead>
-        <div class="dash-scrolling">
-          <div class="css-0">
-            <table className="nurese-recent-patients-table">
-              {docs?.map((doc) => (
-                <tbody className="nurse-recent-patients-info">
-                  <p className="data-styling ">{doc.Name} </p>
-                  <p className="data-styling ">{doc.clientID}</p>
-                  <p className="data-styling">{doc.lastAppointment}</p>
-                  <p className="data-styling">{doc.lastAppointmentlocation}</p>
-                  <AppointFilter
-                    appID={doc.Appointment_ID}
-                    appointmentPath={`/patients/appointment/${doc.clientID}`}
-                    clientPath={`/patients/Personal/${doc.clientID}`}
-                  />
-                </tbody>
-              ))}
-            </table>
-          </div>
-        </div>
+      <div class="">
+        <ul className="">
+          {docs?.map((doc) => (
+            <li>
+              <p className="data-styling ">{doc.Name} </p>
+              <p className="data-styling ">{doc.clientID}</p>
+              <p className="data-styling">{doc.lastAppointment}</p>
+              <p className="data-styling">{doc.lastAppointmentlocation}</p>
+              <AppointFilter
+                appID={doc.Appointment_ID}
+                appointmentPath={`/patients/appointment/${doc.clientID}`}
+                clientPath={`/patients/Personal/${doc.clientID}`}
+              />
+            </li>
+          ))}
+        </ul>
       </div>
     </>
   );

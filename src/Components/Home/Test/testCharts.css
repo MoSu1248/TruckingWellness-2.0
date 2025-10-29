@@ -1,39 +1,41 @@
-.pieChart-container{
-    padding: 10px ;
-    min-width: 0px;
-    word-wrap: break-word;
-    background: var(--primary-backColor);
-    -webkit-background-clip: border-box;
-    margin-left:2rem;
-    margin-right: 1rem;
-    width: 50%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: var(--primary-contShadow);
-    border-radius: 10px;
-    color: red !important;
-    fill: white;
+.pieChart-container {
+  padding: 3rem;
+  word-wrap: break-word;
+  background: var(--primary-backColor);
+  -webkit-background-clip: border-box;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: var(--primary-contShadow);
+  border-radius: 60px;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  fill: white;
+  height: 22rem;
+  width: 40rem;
 }
 
-text{
-    fill: white;
+text {
+  fill: white;
 }
 
-.MuiChartsLegend-series{
-    fill: white;
+.MuiChartsLegend-series {
+  fill: white;
 }
 
-.css-1u0lry5-MuiChartsLegend-root{
-    fill: white;
-};
-
-.piechart{
-    fill: white !important;
+.css-1u0lry5-MuiChartsLegend-root {
+  fill: white;
 }
 
-.MuiChartsAxis-directionX{
-    background-color: red;
+.piechart {
+  fill: white !important;
+}
+
+.MuiChartsAxis-directionX {
+  background-color: #ef745b;
 }

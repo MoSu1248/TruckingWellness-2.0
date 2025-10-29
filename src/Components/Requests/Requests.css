@@ -36,11 +36,32 @@
   width: 95%;
   min-width: 95%;
   padding-left: 0.5rem;
-  transition: 0.2s ease;
+  transition: 0.4s ease;
   margin-bottom: 1rem;
   margin: 12px;
-  background-color: var(--primary-backColor);
-  box-shadow: 2.95px 2.95px 2.6px var(--primary-colorTwGrey2-lighter4);
+
+  list-style: none;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  padding: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.list .user__name {
+  font-weight: 500;
+  width: 50%;
+  font-size: 0.9rem;
+  font-weight: 650;
+  height: fit-content;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: black;
+  transition: 0.4s ease;
 }
 
 .request-item {
@@ -69,11 +90,14 @@ ul {
   margin: auto;
   max-height: 83vh;
   height: 80vh;
-  background-color: var(--primary-backColor);
-  box-shadow: var(--primary-contShadow);
-  border-radius: 10px;
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 60px;
   margin-top: 3rem;
-  z-index: -2;
+  z-index: 2;
+  padding: 1rem 2rem;
+  gap: 4px;
 }
 
 .request-messages-container {
@@ -92,13 +116,16 @@ ul {
 
 .message-container {
   width: 39%;
-  height: 97.5%;
+  height: 96%;
   margin: auto;
-  background-color: var(--primary-appBack);
-  border-radius: 10px;
-  padding: 1rem;
-  padding-top: 1.6rem;
-  box-shadow: var(--request-shadow);
+  border-radius: 40px;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
 }
 
 .request-secletion-scroll {
@@ -132,7 +159,6 @@ ul {
 .date-request {
   font-size: 0.7rem;
   margin: auto;
-  color: var(--primary-colorTwGrey2);
   font-weight: 500;
   margin-right: 0.8rem;
 }
@@ -149,19 +175,27 @@ ul {
 .list:hover {
   border: transparent;
   border: none;
-  background-color: var(--primary-backColor);
   translate: 5px;
-  box-shadow: 0 0.5rem 1rem var(--loginshadow);
-  transition: 0.2s ease;
   cursor: pointer;
+  color: #ffffff;
+  background-color: #303030;
+}
+
+.list:hover .user__name {
+  color: white;
 }
 
 .list-open {
   border: transparent;
   border: none;
-  background-color: var(--primary-backColor);
   translate: 5px;
   box-shadow: 0 0.5rem 1rem var(--loginshadow);
+  color: #ffffff;
+  background-color: #303030;
+}
+
+.list-open .user__name {
+  color: white;
 }
 
 .messages-name-info-container {
@@ -172,7 +206,7 @@ ul {
   background: rgba(255, 255, 255, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 10px;
-  color: var(--primary-text);
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -337,7 +371,6 @@ ul {
 
 .messages-content-container {
   display: flex;
-  justify-content: space-between;
   height: 100%;
   width: 100%;
 }
@@ -355,14 +388,16 @@ ul {
 
 .messages-content-top-container {
   width: 60%;
-  min-width: 60%;
-  margin-left: 1rem;
-  height: 95%;
+  height: 96%;
   margin: auto;
-  border-radius: 4px;
-  background-color: var(--primary-backColor);
-  border-radius: 20px;
-  padding: 1rem;
+  border-radius: 40px;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
 }
 
 .request-header-container .date-container {

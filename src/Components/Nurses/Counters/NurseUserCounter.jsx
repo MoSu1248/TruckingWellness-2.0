@@ -8,17 +8,17 @@ import {
   query,
   where,
 } from "firebase/firestore";
-import "./nurseCounter.css";
+import "../../Home/DashCounters/Counters.scss";
+import icon from "../../../Assets/shared/daily__icon.svg";
 
-const NurseUserCounter = ({month, test }) => {
+const NurseUserCounter = ({ month, test }) => {
   let currentYear = new Date().getFullYear();
-  const [counter, setcounter] = useState();
-  
+  const [counter, setcounter] = useState(100);
 
   useEffect(() => {
     async function getrequests() {
       const coll = query(
-        collectionGroup(db, " " +currentYear),
+        collectionGroup(db, " " + currentYear),
         where("Month", "==", month),
         where("Nurse_Id", "==", test)
       );
@@ -28,14 +28,12 @@ const NurseUserCounter = ({month, test }) => {
     getrequests();
   });
   return (
-    <div className="nurse-counter-container">
-      <div className="nurse-counter-content-container">
-        <FaUserInjured className="counter-icon" />
-        <div className="counter-details-container">
-          <h5 className="counter-header">Monthly Clients Assessed </h5>
-          <p className="counter-no">{counter}</p>
-        </div>
+    <div className="counter">
+      <div className="counter__container">
+        <img src={icon} alt="" className="counter__icon" />
+        <p className="counter__number">{counter}</p>
       </div>
+      <h5 className="counter__title">Monthly Clients</h5>
     </div>
   );
 };

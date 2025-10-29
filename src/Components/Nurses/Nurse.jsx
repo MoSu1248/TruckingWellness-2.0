@@ -26,6 +26,7 @@ import { FaRegUser } from "react-icons/fa";
 import NurseUserCounter from "./Counters/NurseUserCounter";
 import DailyCounter from "./Counters/DailyCounter";
 import DailyClientCounter from "./Counters/DailyClientCounter";
+import ActiveUsers from "../Home/ActiveUsers/ActiveUsers";
 
 const MySwal = withReactContent(Swal);
 const Request = () => {
@@ -104,94 +105,73 @@ const Request = () => {
 
   return (
     <>
+      {/* <Link to="/Nurses" className="back-btn-styling">
+        <button className="back-btn ">
+          <ChevronFirst />
+          <span>Back</span>
+        </button>
+      </Link> */}
       <div className="wrapper">
-
-        <div className="nurse-wrapper">
-          <div className="first-container">
-            <Link to="/Nurses" className="back-btn-styling">
-              <button className="back-btn ">
-                <ChevronFirst />
-                <span>Back</span>
-              </button>
-            </Link>
-            <div className="nurse-profile-container">
-              <span class="chakra-avatar css-1xth1es">
-                <img src={female} alt="test" className="user-img" />
-              </span>
-              <div className="patient-info-top-container">
-                <p className="patient-username">
-                  {name} {Sname}
-                </p>
-                <p
-                  className={`${
-                    status === "Offline"
-                      ? "chakra-text css-hnifhv"
-                      : "chakra-text css-hnifhv css-hnifhv-online"
-                  }`}
-                >
-                  {status}
-                </p>
-              </div>
-
-              <div className="nurse-details-container">
-                <div className="nurse-details-info-styling">
-                  <FaRegUser className="clients-icon" />
-                  <div className="nurse-details-container-styling">
-                    <p className="nurse-header-styling">User ID</p>
-                    <h5 className="nurse-data-styling">{employee_ID}</h5>
-                  </div>
-                </div>
-                <div className="nurse-details-info-styling">
-                  <MdOutlineEmail className="clients-icon" />
-                  <div>
-                    <p className="nurse-header-styling">Email Address</p>
-                    <h5 className="nurse-data-styling">{id}</h5>
-                  </div>
-                </div>
-                <div className="nurse-details-info-styling">
-                  <MdHistory className="clients-icon" />
-
-                  <div>
-                    <p className="nurse-header-styling">Last Seen</p>
-                    <h5 className="nurse-data-styling">{lastLogin}</h5>
-                  </div>
+        <body className=" dashboard-container">
+          <div className="graph-container nurse-top-container">
+            <div className="graph-inner-container">
+              <div className="grid-top-container">
+                <div className="dash-counter-container">
+                  <DailyCounter
+                    path={`Nurses/${id}/Login / ${moment(dateState).format(
+                      "Y"
+                    )}/${moment(dateState).format("MMMM")}/${moment(
+                      dateState
+                    ).format("D")}/LoginTimes`}
+                  />
+                  <DailyClientCounter
+                    day={`${moment(dateState).format("D")}`}
+                    test={employee_ID}
+                    month={`${moment(dateState).format("MMMM")}`}
+                  />
+                  <NurseUserCounter
+                    month={`${moment(dateState).format("MMMM")}`}
+                    test={employee_ID}
+                  />
                 </div>
               </div>
-              <button className="edit-btn" onClick={resetPassword}>
-                Reset Password
-              </button>
-              {/* <EditClientModalBtn  /> */}
             </div>
           </div>
-          <div className="profiile-data-container">
-            <div className="counter-container">
-            <DailyCounter
-                path={`Nurses/${id}/Login / ${moment(dateState).format(
-                  "Y"
-                )}/${moment(dateState).format("MMMM")}/${moment(
-                  dateState
-                ).format("D")}/LoginTimes`}
-              />
-           
-              <DailyClientCounter day={`${moment(dateState).format("D")}`} test={employee_ID} month={`${moment(dateState).format("MMMM")}`} />
-              <NurseUserCounter month={`${moment(dateState).format("MMMM")}`} test={employee_ID}  />
+          <div className="dash-bottom-container">
+            <ActiveUsers />
+            <div className="nurse-details-container">
+              <div className="nurse-details-info-styling">
+                <FaRegUser className="clients-icon" />
+                <div className="nurse-details-container-styling">
+                  <p className="nurse-header-styling">User ID</p>
+                  <h5 className="nurse-data-styling">{employee_ID}</h5>
+                </div>
+              </div>
+              <div className="nurse-details-info-styling">
+                <MdOutlineEmail className="clients-icon" />
+                <div>
+                  <p className="nurse-header-styling">Email Address</p>
+                  <h5 className="nurse-data-styling">{id}</h5>
+                </div>
+              </div>
+              <div className="nurse-details-info-styling">
+                <MdHistory className="clients-icon" />
 
+                <div>
+                  <p className="nurse-header-styling">Last Seen</p>
+                  <h5 className="nurse-data-styling">{lastLogin}</h5>
+                </div>
+              </div>
             </div>
-
-            <div className="nurse-lower-wrapper">
-              <RecentPatients path={employee_ID} />
-              <NurseRequests
-                test={`Requests`}
-                get={employee_ID}
-                nurse_id={employee_ID}
-              />
-            </div>
+            <RecentPatients path={employee_ID} />
+            <NurseRequests
+              test={`Requests`}
+              get={employee_ID}
+              nurse_id={employee_ID}
+            />
             <div className="login_container">
               <div className="login-info-top-container">
-                <div className="heading-icon-main-pages">
-                  <MdHistory className="icon-styling" />
-                  <h4 className=" user-login-heading">User Login History</h4>
-                </div>
+                <h4 className="request-login-heading">User Login History</h4>
                 <IoCalendar
                   className="calender-btn"
                   onClick={() => {
@@ -199,42 +179,42 @@ const Request = () => {
                   }}
                 />
               </div>
-              <ChildrenList
+              {/* <ChildrenList
                 path={`Nurses/${id}/Login / ${moment(dateState).format(
                   "Y"
                 )}/${moment(dateState).format("MMMM")}/${moment(
                   dateState
                 ).format("D")}/LoginTimes`}
+              /> */}
+              <ChildrenList
+                path={`Nurses/${id}/Login / 2024/October/14/LoginTimes`}
               />
             </div>
           </div>
-        </div>
+        </body>
       </div>
+
       <div className={`calender-panel ${calenderState && "visable"}`}>
         <div className="date-selection-top-container">
-          <h4 className="general-info-header date-selection-header">
-            Date Selection{" "}
-          </h4>
+          <h4 className="request-login-heading">Select Date</h4>
           <IoMdClose
-            className="close-btn"
+            className="popup-close-btn"
             onClick={() => {
               setCalenderState((prevState) => !prevState);
             }}
           />
         </div>
         <div className="calender-container ">
-          <>
+          <div className="">
             <div className="">
-              <div className="">
-                <Calendar
-                  className="react-calendar"
-                  value={dateState}
-                  onChange={changeDate}
-                  onClickMonth={changeDate}
-                />
-              </div>
+              <Calendar
+                className="react-calendar"
+                value={dateState}
+                onChange={changeDate}
+                onClickMonth={changeDate}
+              />
             </div>
-          </>
+          </div>
         </div>
       </div>
     </>

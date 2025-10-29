@@ -1,18 +1,4 @@
 
-  .user__name {
-    font-weight: 500;
-    width: 50%;
-    font-size: 0.9rem;
-    font-weight: 650;
-    height: fit-content;
-    color: var(--primary-text);
-    text-overflow: ellipsis;
-      white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
 
 
   .user__placeholder {

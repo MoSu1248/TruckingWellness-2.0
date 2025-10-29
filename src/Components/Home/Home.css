@@ -73,16 +73,17 @@
 
 .test-grid {
   height: 22rem;
-  background: rgba(255, 255, 255, 0.568);
+  width: 100%;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
   border-radius: 60px;
-  padding: 1.7rem;
-  overflow: hidden;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
   display: flex;
   flex-direction: column;
-  backdrop-filter: blur(14px) saturate(180%); /* frosted glass */
-  -webkit-backdrop-filter: blur(14px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
   font-family: "Inter", sans-serif;
   grid-row: 2/2;
   grid-column: 2/4;

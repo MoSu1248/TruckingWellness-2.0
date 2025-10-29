@@ -47,7 +47,6 @@ export default function Show({props}){
   return (
     <>
       <div className="wrapper requests-wrapper">
-        <Banner title="Inbox" />
         <div className="request-container">
           <RequestNav active3={"Yes"}/>
           <RequestSelection path = {`Requests_Deleted`} />

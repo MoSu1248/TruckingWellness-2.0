@@ -1,17 +1,19 @@
 .nurse-dash-messages-container {
-  width: 40rem;
+  min-width: 40rem;
   border-radius: 60px;
-  padding: 1.7rem;
+  padding: 3rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background: rgba(255, 255, 255, 0.568);
-  backdrop-filter: blur(14px) saturate(180%);
-  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   position: relative;
   margin: 0 !important;
+
+  height: 22rem;
 }
 
 .nurse-dash-messages-container::before {
@@ -141,6 +143,7 @@
   font-weight: 600;
   color: #333;
   font-size: 0.9rem;
+  margin: 0;
 }
 
 .date-request {
@@ -153,4 +156,9 @@
   font-size: 0.85rem;
   font-weight: 500;
   margin: 0;
+}
+
+.link-request-styling{
+    text-decoration: none !important;
+
 }

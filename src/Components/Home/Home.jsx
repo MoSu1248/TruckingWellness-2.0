@@ -37,8 +37,8 @@ const Home = () => {
           <ActiveUsers />
           <RecentPatientsCont />
           <RecentMessages />
-          <RecentMessages />
-          <div className="test-grid"></div>
+          <Test />
+          <Graph />
           <RecentFlagged />
         </div>
       </body>

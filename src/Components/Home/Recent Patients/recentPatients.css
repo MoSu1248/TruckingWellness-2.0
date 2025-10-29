@@ -1,17 +1,16 @@
 .dash-recent-patients {
   height: 22rem;
   width: 22rem;
-  background: rgba(255, 255, 255, 0.568);
   border-radius: 60px;
-  padding: 1.7rem;
+  padding: 3rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  backdrop-filter: blur(14px) saturate(180%); /* frosted glass */
-  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  font-family: "Inter", sans-serif;
   grid-row: 2/2;
 }
 

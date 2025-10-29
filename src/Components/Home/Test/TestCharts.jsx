@@ -9,8 +9,6 @@ import Folder from "../../Resources/folder.png";
 import { FaUserAlt } from "react-icons/fa";
 import { PieChart, pieArcLabelClasses } from "@mui/x-charts/PieChart";
 import "./testCharts.css";
-import { LineChart } from "@mui/x-charts/LineChart";
-import { TbTestPipe } from "react-icons/tb";
 import AppointFilter from "../Filter/DashFilter";
 
 export default function PieChartWithCustomizedLabel() {
@@ -51,14 +49,14 @@ export default function PieChartWithCustomizedLabel() {
   });
 
   const data = [
-    { label: "HIV Positive", value: colGroup, color: "#c1151bd3" },
-    { label: "HIV Negative", value: field, color: "#818ca8" },
+    { label: "HIV Positive", value: 10, color: "#ef745b" },
+    { label: "HIV Negative", value: 80, color: "#ececec3d" },
   ];
 
   const sizing = {
     margin: { right: 5 },
     width: 550,
-    height: 200,
+    height: 250,
     legend: {
       hidden: false,
       position: { vertical: "top", horizontal: "left" },
@@ -74,8 +72,6 @@ export default function PieChartWithCustomizedLabel() {
   return (
     <div className="pieChart-container">
       <div className="heading-icon-container-requests dash-header-styling">
-        <TbTestPipe className="icon-styling" />
-
         <h4 className="request-login-heading">HIV Testing {dataFromChild}</h4>
         <AppointFilter sendDataToParent={handleDataFromChild} />
       </div>
