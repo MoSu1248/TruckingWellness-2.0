@@ -12,10 +12,7 @@
   gap: 1.5rem;
 }
 
-.med-top-wrapper:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
-}
+
 
 /* --- HEADER --- */
 .medication-header-container {
@@ -24,12 +21,6 @@
   justify-content: space-between;
   padding: 0.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-}
-
-.appointment-timeline-header {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--primary-text);
 }
 
 .viewbtn {

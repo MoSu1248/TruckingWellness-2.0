@@ -206,6 +206,7 @@
   font-weight: 700;
   font-size: 0.8rem;
   letter-spacing: 0.05rem;
+  width: 100%;
 }
 
 .clients-table-row-header th {

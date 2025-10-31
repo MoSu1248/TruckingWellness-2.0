@@ -72,7 +72,7 @@ const Personal = () => {
   }
 
   return (
-    <div className="client-wrapper wrapper">
+    <div className="personal-wrapper ">
       <PatientsSectionsBar props={id} active2={"Yes"} />
       <>
         <AnimatePresence
@@ -98,7 +98,6 @@ const Personal = () => {
 
         <div className="client-container med-client-container">
           <div className="medication-header-container">
-            <AiOutlineMedicineBox className="icon-styling" />
             <h5 className="general-info-header appointment-timeline-header">
               Medication
             </h5>

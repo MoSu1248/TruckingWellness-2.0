@@ -1,26 +1,25 @@
- .active-pag{
-border-color: var(--primary-Tab-toplink);
-width: 35px;
-    height: 35px;
-font-weight: 600;
-font-size: 16px;
-margin: 0 10px;
-border-radius: 6px;
-cursor: pointer;
-transition: all 0.3s ease;
-background-color: transparent;
-font-family: "DM Sans", sans-serif;
-transition: ease-in 0.1s;
-color: var(--primary-Tab-toplink);
-border: 1px solid;
-
+.active-pag {
+  border-color: var(--primary-Tab-toplink);
+  width: 35px;
+  height: 35px;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  font-family: "DM Sans", sans-serif;
+  transition: ease-in 0.1s;
+  color: var(--primary-Tab-toplink);
+  border: 1px solid;
 }
 
-.pagination-btn-styling{
-    width: 35px;
-    height: 35px;
-    color: var(--primary-colorTwGrey2);
-    font-weight: 600;
+.pagination-btn-styling {
+  width: 35px;
+  height: 35px;
+  color: var(--primary-colorTwGrey2);
+  font-weight: 600;
   font-size: 16px;
   margin: 0 10px;
   border-radius: 6px;
@@ -33,28 +32,29 @@ border: 1px solid;
   transition: ease-in 0.1s;
 }
 
-.pagination{
-    display: flex;
-    justify-content: center;
+.pagination {
+  display: flex;
+  justify-content: center;
 }
 
-.select-styling{
-    width: 5%;
-    color: var(--primary-colorTwGrey1);
-    background-color: transparent;
-    border: 1px solid var(--primary-colorTwGrey1-lighter);  
-    text-align: center;
-    border-radius: 5px;
-    margin-top: 0.2rem;
-    height: 2.7rem;
+.select-styling {
+  width: 5%;
+  background-color: transparent;
+  text-align: center;
+  margin-top: 0.2rem;
+  height: 2.7rem;
+
+  font-weight: 600;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
 }
 
-
-.select-styling:focus{
-    border: 1px solid var(--primary-Tab-toplink);
+.select-styling:focus {
+  border: 1px solid var(--primary-Tab-toplink);
 }
 
-.select-option-styling:hover{
-    border: 1px solid var(--primary-colorTwGrey2-lighter2);  
+.select-option-styling:hover {
+  border: 1px solid var(--primary-colorTwGrey2-lighter2);
 }
-

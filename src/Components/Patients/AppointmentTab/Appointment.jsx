@@ -58,7 +58,7 @@ const Personal = (path) => {
   }
 
   return (
-    <div className="client-wrapper  appointments-wrapper">
+    <div className="personal-wrapper">
       <AnimatePresence initial={false} mode="wait" onExitComplete={() => null}>
         {modalOpen && (
           <Modal
@@ -71,7 +71,6 @@ const Personal = (path) => {
       <PatientsSectionsBar props={id} active3={"Yes"} />
       <div className="appointment-topsection-container">
         <div className="medication-header-container">
-          <IoCalendarOutline className="icon-styling" />
           <h5 className="general-info-header appointment-timeline-header">
             Appointment History {datePick}
           </h5>

@@ -159,7 +159,7 @@ const Personal = () => {
   returnStatus();
 
   return (
-    <div className="wrapper">
+    <div className="personal-wrapper">
       {/* <Banner title="Client Profile" /> */}
 
       <PatientsSectionsBar props={id} active4={"Yes"} />
