@@ -151,66 +151,68 @@ const Show = () => {
                   className="refresh-btn-styling"
                   onClick={hideSearch}
                 />
-              </div>
-            </div>
-            <div className="table-style-container">
-              <div className="client-filter-container">
-                {/* <IoMdCheckmark className={`${hiv === false ? 'refresh-btn' : 'refresh-btn-active'}`} onClick={() => setHiv((prevOpen) => !prevOpen)}/>
+                <div className="client-filter-container">
+                  {/* <IoMdCheckmark className={`${hiv === false ? 'refresh-btn' : 'refresh-btn-active'}`} onClick={() => setHiv((prevOpen) => !prevOpen)}/>
                 <Flag className={`${flagged === false ? 'refresh-btn' : 'refresh-btn-active'}`} onClick={() => setflagged((prevOpen) => !prevOpen)} /> */}
-                <div className="filter-containers">
-                  <div className="filter-state-container">
-                    {(hivStatus || flaggedStatus) && (
-                      <span className={"Filter-label"}>Filter: </span>
-                    )}
-                    {hivStatus && <span>HIV</span>}
-                    {flaggedStatus && <span>Flagged</span>}
-                  </div>
-                  <div>
-                    <IoFilter
-                      className={"refresh-btn"}
-                      onClick={() => setOpenProfile((prev) => !prev)}
-                    />
-                    {openProfile && (
-                      <div
-                        className="flex flex-col dropDownProfile_main"
-                        onMouseLeave={() => setOpenProfile((prev) => !prev)}
-                      >
-                        <div className="flex flex-col gap-4 filter-options-inner-container">
-                          <h6 className="filter-header">Filter Options</h6>
-                          <div>
-                            <label className="checkbox-container">
-                              <input
-                                type="checkbox"
-                                className="check-styling"
-                                checked={hiv}
-                                onChange={handleChange}
-                              />
-                              <span className="check-label">Hiv Positive</span>
-                            </label>
+                  <div className="filter-containers">
+                    <div className="filter-state-container">
+                      {(hivStatus || flaggedStatus) && (
+                        <span className={"Filter-label"}>Filter: </span>
+                      )}
+                      {hivStatus && <span>HIV</span>}
+                      {flaggedStatus && <span>Flagged</span>}
+                    </div>
+                    <div>
+                      <IoFilter
+                        className={"refresh-btn"}
+                        onClick={() => setOpenProfile((prev) => !prev)}
+                      />
+                      {openProfile && (
+                        <div
+                          className="flex flex-col dropDownProfile_main"
+                          onMouseLeave={() => setOpenProfile((prev) => !prev)}
+                        >
+                          <div className="flex flex-col gap-4 filter-options-inner-container">
+                            <h6 className="filter-header">Filter Options</h6>
+                            <div>
+                              <label className="checkbox-container">
+                                <input
+                                  type="checkbox"
+                                  className="check-styling"
+                                  checked={hiv}
+                                  onChange={handleChange}
+                                />
+                                <span className="check-label">
+                                  Hiv Positive
+                                </span>
+                              </label>
+                            </div>
+                            <div>
+                              <label className="checkbox-container">
+                                <input
+                                  type="checkbox"
+                                  checked={flagged}
+                                  className="check-styling"
+                                  onChange={handleChange2}
+                                />
+                                <span className="check-label">Flagged</span>
+                              </label>
+                            </div>
+                            <button
+                              className="filter-btn-set"
+                              onClick={runProcess}
+                            >
+                              Filter
+                            </button>
                           </div>
-                          <div>
-                            <label className="checkbox-container">
-                              <input
-                                type="checkbox"
-                                checked={flagged}
-                                className="check-styling"
-                                onChange={handleChange2}
-                              />
-                              <span className="check-label">Flagged</span>
-                            </label>
-                          </div>
-                          <button
-                            className="filter-btn-set"
-                            onClick={runProcess}
-                          >
-                            Filter
-                          </button>
                         </div>
-                      </div>
-                    )}
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="table-style-container">
               <table className="table">
                 <thead>
                   <tr className="clients-table-row-header">

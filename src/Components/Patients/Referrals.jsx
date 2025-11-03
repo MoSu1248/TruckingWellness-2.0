@@ -165,7 +165,6 @@ const Personal = () => {
       <PatientsSectionsBar props={id} active4={"Yes"} />
       <div className="Referrals-top-wrapper">
         <div className="referrals-header-container">
-          <VscReferences className="icon-styling" />
           <h5 className="general-info-header appointment-timeline-header">
             Referrals
           </h5>

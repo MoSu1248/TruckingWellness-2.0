@@ -109,9 +109,8 @@ const Personal = () => {
                 value={search}
                 onInput={handleclick}
               ></input>
+              <SelectLimit onLimitChange={setPostPerPage} />
             </form>
-
-            <SelectLimit onLimitChange={setPostPerPage} />
           </div>
           <div className=" med-table-style-container">
             <table className="table med-table">

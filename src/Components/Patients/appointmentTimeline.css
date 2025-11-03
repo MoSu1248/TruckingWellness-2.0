@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.2rem 1.5rem;
+  padding: 0.5rem;
   border-bottom: 1px solid var(--primary-bottom-border-table);
 }
 
@@ -111,4 +111,9 @@
 
 .appointmentTimeline-top-container::-webkit-scrollbar-thumb:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.action-btn-container{
+  display: flex;
+  gap: 0.2rem;
 }

@@ -1,13 +1,12 @@
 import { useCollectionData } from "react-firebase-hooks/firestore";
-import { setDoc, updateDoc, doc, deleteDoc, orderBy } from "firebase/firestore";
-import { collection, limit } from "firebase/firestore";
-import { collectionGroup, query, where, getDocs } from "firebase/firestore";
-import React, { useState, useEffect } from "react";
-import AppointFilter from "./PatientsOptions";
+import { orderBy } from "firebase/firestore";
+import { limit } from "firebase/firestore";
+import { collectionGroup, query } from "firebase/firestore";
+import React from "react";
 import { db } from "../../firebaseConfig/firebase";
 import "./recentPatients.css";
-import Folder from "../../Resources/folder.png";
-import { FaUserAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { IoChevronForward } from "react-icons/io5";
 
 export default function ChildrenList({ path, id }) {
   const weekday = [
@@ -54,11 +53,12 @@ export default function ChildrenList({ path, id }) {
                 <p className="info-text">{doc.Appointment_Date}</p>
                 <p className="info-text">{doc.Appointment_Location}</p>
               </div>
-              <AppointFilter
-                appID={doc.Appointment_ID}
-                appointmentPath={`/patients/appointment/${doc.clientID}`}
-                clientPath={`/patients/Personal/${doc.clientID}`}
-              />
+              <Link
+                className="viewbtn"
+                to={`/patients/Personal/${doc.clientID}`}
+              >
+                <IoChevronForward className="chev-styling" />
+              </Link>
             </div>
           </details>
         ))}

@@ -96,8 +96,6 @@ const Show = () => {
           <>
             <div className="clients-search-container">
               <div className="heading-icon-main-pages">
-                <TiWarning className="injured-user-icon" />
-
                 <h4 className="client-list-header">Recently Alerted Clients</h4>
               </div>
 

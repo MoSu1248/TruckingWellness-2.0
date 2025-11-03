@@ -608,3 +608,18 @@
   background-color: white;
   color: #ef745b;
 }
+
+.Nurses-table-header {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+
+.Nurses-table-header tr {
+  border-style: none !important;
+}
+
+.test-div {
+  display: flex;
+  gap: 4px;
+}

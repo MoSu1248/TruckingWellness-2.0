@@ -81,46 +81,46 @@ const Personal = (path) => {
               onChange={(e) => setSearch(e.target.value)}
               value={search}
             ></input>
-          </form>
-          <div className="filter-container">
-            <IoFilter
-              className={"refresh-btn appointment-filter-btns"}
-              onClick={() => setOpenProfile((prev) => !prev)}
-            />
-            {openProfile && (
-              <div
-                className="flex flex-col dropDownProfile-Appointment"
-                onMouseLeave={() => setOpenProfile((prev) => !prev)}
-              >
-                <div className="flex flex-col gap-4">
-                  {/* <input type="text" value={data} onChange={(e) => setData(e.target.value)} /> */}
-                  <h6 className="filter-header">Filter Year</h6>
-                  <button
-                    className="filter-btn-styling"
-                    value={currentYear}
-                    onClick={(e) => setdatePick(e.target.value)}
-                  >
-                    {" "}
-                    {currentYear}
-                  </button>
-                  <button
-                    className="filter-btn-styling"
-                    value={currentYear + 1}
-                    onClick={(e) => setdatePick(e.target.value)}
-                  >
-                    {currentYear + 1}
-                  </button>
-                  <button
-                    className="filter-btn-styling"
-                    value={currentYear + 2}
-                    onClick={(e) => setdatePick(e.target.value)}
-                  >
-                    {currentYear + 2}
-                  </button>
+            <div className="filter-container">
+              <IoFilter
+                className={"refresh-btn appointment-filter-btns"}
+                onClick={() => setOpenProfile((prev) => !prev)}
+              />
+              {openProfile && (
+                <div
+                  className="flex flex-col dropDownProfile-Appointment"
+                  onMouseLeave={() => setOpenProfile((prev) => !prev)}
+                >
+                  <div className="flex flex-col gap-4">
+                    {/* <input type="text" value={data} onChange={(e) => setData(e.target.value)} /> */}
+                    <h6 className="filter-header">Filter Year</h6>
+                    <button
+                      className="filter-btn-styling"
+                      value={currentYear}
+                      onClick={(e) => setdatePick(e.target.value)}
+                    >
+                      {" "}
+                      {currentYear}
+                    </button>
+                    <button
+                      className="filter-btn-styling"
+                      value={currentYear + 1}
+                      onClick={(e) => setdatePick(e.target.value)}
+                    >
+                      {currentYear + 1}
+                    </button>
+                    <button
+                      className="filter-btn-styling"
+                      value={currentYear + 2}
+                      onClick={(e) => setdatePick(e.target.value)}
+                    >
+                      {currentYear + 2}
+                    </button>
+                  </div>
                 </div>
-              </div>
-            )}
-          </div>
+              )}
+            </div>
+          </form>
         </div>
         <div className="grid-styling">
           {docs

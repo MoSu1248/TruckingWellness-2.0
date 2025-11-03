@@ -138,7 +138,35 @@ const Request = () => {
             </div>
           </div>
           <div className="dash-bottom-container">
-            <ActiveUsers />
+            <div className="test-div">
+              <ActiveUsers />
+              <div className="nurse-details-container">
+                <div className="nurse-details-info-styling">
+                  <div className="nurse-details-container-styling">
+                    <p className="nurse-header-styling">
+                      Client Retention Rate
+                    </p>
+                    <h5 className="nurse-data-styling">96%</h5>
+                  </div>
+                </div>
+                <div className="nurse-details-info-styling">
+                  <div>
+                    <p className="nurse-header-styling">
+                      Avg. Consultation Time
+                    </p>
+                    <h5 className="nurse-data-styling">18 mins</h5>
+                  </div>
+                </div>
+                <div className="nurse-details-info-styling">
+                  <div>
+                    <p className="nurse-header-styling">
+                      Completed Training Modules
+                    </p>
+                    <h5 className="nurse-data-styling">4/5</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="nurse-details-container">
               <div className="nurse-details-info-styling">
                 <FaRegUser className="clients-icon" />

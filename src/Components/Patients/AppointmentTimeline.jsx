@@ -33,17 +33,22 @@ export default function AppointmentTimeline({ path, passedId }) {
   const [docs, loading, error] = useCollectionData(q);
 
   return (
-    <div className="appointmentTimeline-top-wrapper">
+    <div className="med-top-wrapper">
       <div className="appointmentTimeline-header-container">
         <h5 className="general-info-header appointment-timeline-header">
-          Appointment Timeline {dataFromChild}
+          Appointments {dataFromChild}
         </h5>
-        <AppointFilter sendDataToParent={handleDataFromChild} />
-        <Link className="link-styling" to={`/patients/appointment/${passedId}`}>
-          <button className="patients-appointment-view-btn viewbtn">
-            <IoChevronForward className="chev-styling" />
-          </button>
-        </Link>
+        <div className="action-btn-container">
+          <AppointFilter sendDataToParent={handleDataFromChild} />
+          <Link
+            className="link-styling"
+            to={`/patients/appointment/${passedId}`}
+          >
+            <button className="patients-appointment-view-btn viewbtn">
+              <IoChevronForward className="chev-styling" />
+            </button>
+          </Link>
+        </div>
       </div>
       <div className="appointmentTimeline-top-container">
         {docs?.map((doc) => (

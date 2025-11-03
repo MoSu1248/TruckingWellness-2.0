@@ -4,11 +4,46 @@
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   grid-column: span 1;
   border-radius: 60px;
-  height: 22rem;
-  width: 22rem;
+  min-height: 22rem;
+  min-width: 22rem;
+  position: relative;
+  overflow: hidden;
+
   .dashboard__image {
     height: 100%;
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
+    border-radius: 60px;
+  }
+
+  .dashboard__image-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(255, 255, 255, 0.24) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+
+    p {
+      color: white;
+      margin-left: 2rem;
+      font-size: 1.4rem;
+      font-weight: 500;
+      background-color: rgba(255, 255, 255, 0.25);
+      border-radius: 8px;
+      padding: 0 2rem;
+      margin-bottom: 0;
+    }
   }
 }

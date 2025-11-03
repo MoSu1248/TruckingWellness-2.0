@@ -32,23 +32,22 @@ export default function AppointmentTimeline({ path, passedId }) {
         <h5 className="general-info-header appointment-timeline-header">
           Medication {dataFromChild}
         </h5>
-        <AppointFilter sendDataToParent={handleDataFromChild} />
-
-        <Link to={`/patients/medication/${passedId}`}>
-          <button className="patients-appointment-view-btn viewbtn">
-            <IoChevronForward className="chev-styling" />
-          </button>
-        </Link>
+        <div className="action-btn-container">
+          <AppointFilter sendDataToParent={handleDataFromChild} />
+          <Link to={`/patients/medication/${passedId}`}>
+            <button className="patients-appointment-view-btn viewbtn">
+              <IoChevronForward className="chev-styling" />
+            </button>
+          </Link>
+        </div>
       </div>
       <table className="medication-table-container">
         {/* <img src={Listimg} alt="" className="list-patient-img-styling" /> */}
 
         <div className="medication-top-container">
           <thead className="medication-table-header-container">
-            <tr className="clients-table-row-header medication-section-table-header">
-              <th>
-                <p>Medication</p>
-              </th>
+            <tr className="clients-table-row-header ">
+              <th>Medication</th>
               <th>Assigned by</th>
             </tr>
           </thead>

@@ -19,6 +19,7 @@ import Options from "../Home/Recent Patients/PatientsOptions";
 import AppointFilter from "../Home/Recent Patients/PatientsOptions";
 import { FaRegFolderOpen } from "react-icons/fa";
 import "../Home/Recent Patients/recentPatients.css";
+import { IoChevronForward } from "react-icons/io5";
 
 export default function ChildrenList({ path, id }) {
   const q = query(
@@ -49,12 +50,9 @@ export default function ChildrenList({ path, id }) {
                 <p className="info-text">{doc.lastAppointment}</p>
                 <p className="info-text">{doc.lastAppointmentlocation}</p>
               </div>
-
-              <AppointFilter
-                sendDataToParent={doc.clientID}
-                appointmentPath={`/patients/appointment/${doc.clientID}`}
-                clientPath={`/patients/Personal/${doc.clientID}`}
-              />
+              <Link className="viewbtn" to={`/patients/Personal/${doc.clientID}`}>
+                <IoChevronForward className="chev-styling" />
+              </Link>
             </div>
           </details>
         ))}

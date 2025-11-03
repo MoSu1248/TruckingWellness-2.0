@@ -57,10 +57,10 @@ const Nurse = () => {
     <>
       <div className="wrapper nurse-container-wrapper">
         <div className="client-container">
-          <div className="Nurses-table-header stickyu">
+          <div className="Nurses-table-header ">
             {/* <FiUsers className="edit-icon" /> */}
             <div className="heading-icon-main-pages">
-              <h4 className="general-info-header">User Information</h4>
+              <h4 className="client-list-header">Nurses</h4>
             </div>
             <form className="search">
               <input
@@ -75,39 +75,35 @@ const Nurse = () => {
           <div className="table-style-container">
             <table className="table">
               <thead>
-                <tr className="table-row-header">
-                  <th className="nurse-table-header">
+                <tr className="clients-table-row-header">
+                  <th className="">
                     <span>
                       User ID <FaSort className="arrow-rotation-styling" />
                     </span>
                   </th>
-                  <th className="nurse-table-header">
+                  <th className="">
                     <span>
                       Nurse ID
                       <FaSort className="arrow-rotation-styling" />
                     </span>
                   </th>
-                  <th className="nurse-table-header">
+                  <th className="">
                     <span>
                       Username
                       <FaSort className="arrow-rotation-styling" />
                     </span>
                   </th>
-                  <th className="nurse-table-header">
+                  <th className="">
                     <span>
                       Last Seen
                       <FaSort className="arrow-rotation-styling" />
                     </span>
                   </th>
-                  <th className="nurse-table-header status-header">
-                    <p>Status</p>
-                  </th>
-                  <th className="nurse-table-header status-header">
-                    <p>Action</p>
-                  </th>
+                  <th className=" ">Status</th>
+                  <th className=" ">Action</th>
                 </tr>
               </thead>
-              <tbody className="">
+              <tbody className="patients-table-body-styling">
                 {patients
                   .filter((request) => {
                     return search === ""
@@ -116,22 +112,16 @@ const Nurse = () => {
                   })
                   .slice(0, postPerPage)
                   .map((request) => (
-                    <tr key={request.id} className="table-row">
-                      <td className="data-border data1">
-                        <p className="data ">{request.id}</p>
+                    <tr key={request.id} className="row-styles">
+                      <td className="patients-table-data">{request.id}</td>
+                      <td className="patients-table-data ">
+                        {request.NurseID}
                       </td>
-                      <td className="data-border ">
-                        <p className="data ">{request.NurseID}</p>
+                      <td className="patients-table-data">{request.Name}</td>
+                      <td className="patients-table-data">
+                        {request.lastLogin}
                       </td>
-                      <td className="data-border data-name">
-                        <p className="data">{request.Name}</p>
-                      </td>
-                      <td className="data-border data-login">
-                        <p className="data last-login-data">
-                          {request.lastLogin}
-                        </p>
-                      </td>
-                      <td className="data-border data-status">
+                      <td className="patients-table-data">
                         <p
                           className={`${
                             request.Status === "Online"
@@ -142,7 +132,7 @@ const Nurse = () => {
                           {request.Status}
                         </p>
                       </td>
-                      <td className="data-border action-border">
+                      <td className="patients-table-data">
                         <Link
                           className="viewbtn"
                           to={`/Nurses/Nurse/${request.id}`}

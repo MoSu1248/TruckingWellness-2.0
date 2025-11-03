@@ -3,8 +3,7 @@
 .client-container {
   width: 90%;
   min-height: 78vh;
-  background: rgba(255, 255, 255, 0.35);
-  backdrop-filter: blur(18px) saturate(180%);
+  background: transparent;
   -webkit-backdrop-filter: blur(18px) saturate(180%);
   border-radius: 30px;
   padding: 2rem;
@@ -34,7 +33,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
 }
 
 .heading-icon-main-pages {
@@ -112,9 +110,6 @@
 }
 
 /* --- FILTER SECTION --- */
-.client-filter-container {
-  margin: 1rem 0;
-}
 
 .filter-containers {
   display: flex;
@@ -298,10 +293,6 @@
   .refresh-btn {
     width: 2.5rem;
     height: 2.5rem;
-  }
-
-  .client-filter-container {
-    margin: 0.5rem 0;
   }
 
 }
