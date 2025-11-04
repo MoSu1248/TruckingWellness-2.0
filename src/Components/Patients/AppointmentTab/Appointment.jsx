@@ -26,7 +26,7 @@ const Personal = (path) => {
     { name: "Loading...", id: "initial" },
   ]);
   const [test, settest] = useState();
-  const [datePick, setdatePick] = useState(currentYear);
+  const [datePick, setdatePick] = useState(2024);
   const [openFilter, setOpenFilter] = useState(false);
   const q = query(
     collection(db, `Clients/${id}/ ${datePick}`),

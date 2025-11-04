@@ -66,6 +66,7 @@
   background-position: 0.7rem center;
   background-size: 16px;
   transition: all 0.25s ease;
+  color: black;
 }
 
 .search-input:focus {

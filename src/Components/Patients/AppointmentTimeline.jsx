@@ -19,7 +19,7 @@ export default function AppointmentTimeline({ path, passedId }) {
   ]);
   const today = new Date();
   const [year, setYear] = useState(today.getFullYear());
-  const [dataFromChild, setDataFromChild] = useState(currentYear);
+  const [dataFromChild, setDataFromChild] = useState(2024);
 
   function handleDataFromChild(data) {
     setDataFromChild(data);
@@ -52,7 +52,7 @@ export default function AppointmentTimeline({ path, passedId }) {
       </div>
       <div className="appointmentTimeline-top-container">
         {docs?.map((doc) => (
-          <NavLink
+          <Link
             to={`/patients/appointment/${id}`}
             state={{ from: "doc.Appointment_ID " }}
           >
@@ -68,7 +68,7 @@ export default function AppointmentTimeline({ path, passedId }) {
                 </p>
               </div>
             </div>
-          </NavLink>
+          </Link>
         ))}
       </div>
     </div>

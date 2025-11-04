@@ -8,32 +8,38 @@
   flex-direction: column;
   width: fit-content;
   height: fit-content;
-  border-radius: 20px;
-  background: var(--primary-backColor);
   -webkit-background-clip: border-box;
   margin: auto;
   margin-top: 1.5rem;
   transition: 0.3s ease;
-  font-family: "DM Sans", sans-serif;
-  border-radius: 10px;
-  border: 1px solid var(--primary-text);
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  overflow: hidden;
 }
 
 .appointment-details-container:hover {
   transform: scale(1.1);
   box-shadow: var(--primary-appointment-hover-container);
-  border: 1px solid var(--primary-colorrTwRed);
 }
 
 .appointment-link-styling {
   width: 25rem;
   max-width: 25rem;
-  min-width: 25rem;
-  height: 14rem;
-  max-height: 14rem;
-  min-height: 14rem;
+  height: 16rem;
+  max-height: 16rem;
   text-align: left;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  overflow: hidden;
+  text-decoration: none;
   padding: 0 1rem;
+  color: #303030;
 }
 
 .appointment-date-heading {
@@ -225,7 +231,7 @@
 .appointment-id-styling {
   font-size: 1rem;
   margin-top: 0.2rem;
-  color: var(--primary-colorTwGrey1);
+  color: black;
   font-weight: 500;
 }
 
@@ -253,7 +259,7 @@
 }
 
 .appointment-icon-styling {
-  color: var(--primary-colorTwGrey2);
+  color: #ef745b;
 
   margin: auto 0;
 }
@@ -293,36 +299,41 @@
 
 .appointment-topsection-container {
   width: 100%;
-  margin: 3rem auto 2rem;
-  padding: 1.5rem 2rem;
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  min-height: 78vh;
+  background: transparent;
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  border-radius: 60px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  font-family: "Inter", sans-serif;
+  color: var(--primary-text);
+  display: flex;
+  flex-direction: column;
   transition: all 0.3s ease;
-  min-height: 70vh;
+  margin-top: 2rem;
 }
 
-
 .dropDownProfile-Appointment {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  background: var(--primary-backColor);
-  box-shadow: 14px 17px 40px 4px var(--primary-dropDownShadow);
-  color: inherit;
-  min-width: unset;
-
-  z-index: 1;
-  border-radius: 10px;
-  border-width: 1px;
-  width: 9%;
-  border: transparent;
-  -webkit-backdrop-filter: blur(63px);
-  backdrop-filter: blur(63px);
-  padding: 15px;
   position: absolute;
-  margin: 1rem -5rem;
-  border: 1px solid var(--primary-colorTwGrey2) 3f;
+  border-radius: 20px;
+  padding: 1rem 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin: 0 !important;
+  right: 0;
+  z-index: 1;
+  top: 10%;
+  max-height: 14rem;
+  width: 20rem;
+}
+
+.flex-container-recent-patients {
+  display: flex;
 }

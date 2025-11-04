@@ -1,6 +1,5 @@
 .dash-recent-patients {
   height: 22rem;
-  width: 22rem;
   border-radius: 60px;
   padding: 3rem;
   overflow: hidden;
@@ -12,6 +11,7 @@
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   grid-row: 2/2;
+  grid-column: span 2;
 }
 
 .recent-patients-scroll {
@@ -80,11 +80,18 @@ summary::marker {
 }
 
 details[open] summary {
-  color: #ef745b; /* muted warm red accent */
+  color: #ef745b;
 }
 
 details[open] .nurse-recent-patients-info {
   background: #fff7f7;
   border-radius: 8px;
   padding: 0.8rem;
+}
+
+.alert-number {
+  color: #ef745b;
+  background: rgba(255, 255, 255, 0.733);
+  border-radius: 50%;
+  padding: 0.2rem 0.6rem;
 }

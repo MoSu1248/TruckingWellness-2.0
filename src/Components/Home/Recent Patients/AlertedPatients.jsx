@@ -49,8 +49,11 @@ export default function ChildrenList({ path, id }) {
 
   return (
     <>
-      <div class="">
-        <ul className="">
+      <div class="RecenetFlagged-container">
+        <h4 class="request-login-heading">
+          Daily Alerts : <span className="alert-number">14</span>
+        </h4>
+        {/* <ul className="">
           {docs?.map((doc) => (
             <li>
               <p className="data-styling ">{doc.Name} </p>
@@ -64,7 +67,7 @@ export default function ChildrenList({ path, id }) {
               />
             </li>
           ))}
-        </ul>
+        </ul> */}
       </div>
     </>
   );

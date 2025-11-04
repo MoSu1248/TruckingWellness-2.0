@@ -40,10 +40,10 @@ export default function ChildrenList({ path, id }) {
   const [RequestCount, setRequestCount] = useState(0);
 
   return (
-    <>
+    <div className="RecenetFlagged-top-container">
       <div class="RecenetFlagged-container">
         <h6 className="request-login-heading">
-          Flagged Users: <span>5%</span>
+          Flagged Users: <span >5%</span>
         </h6>
         <div className="flagged-bars">
           <div className="grid-bar-item bar__negative">
@@ -55,9 +55,10 @@ export default function ChildrenList({ path, id }) {
             <div className=" grid-bar positive">clean</div>
           </div>
         </div>
-
+      </div>
+      <div>
         <AlertedPatients />
       </div>
-    </>
+    </div>
   );
 }

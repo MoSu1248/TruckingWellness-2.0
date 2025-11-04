@@ -7,6 +7,7 @@ import { db } from "../../firebaseConfig/firebase";
 import "./recentPatients.css";
 import { Link } from "react-router-dom";
 import { IoChevronForward } from "react-icons/io5";
+import AppointFilter from "./PatientsOptions";
 
 export default function ChildrenList({ path, id }) {
   const weekday = [
@@ -53,12 +54,17 @@ export default function ChildrenList({ path, id }) {
                 <p className="info-text">{doc.Appointment_Date}</p>
                 <p className="info-text">{doc.Appointment_Location}</p>
               </div>
-              <Link
+              {/* <Link
                 className="viewbtn"
                 to={`/patients/Personal/${doc.clientID}`}
               >
                 <IoChevronForward className="chev-styling" />
-              </Link>
+              </Link> */}
+              <AppointFilter
+                appID={doc.Appointment_ID}
+                appointmentPath={`/patients/appointment/${doc.clientID}`}
+                clientPath={`/patients/Personal/${doc.clientID}`}
+              />
             </div>
           </details>
         ))}

@@ -53,6 +53,8 @@
   max-height: 18rem; /* makes it scrollable when content is tall */
   padding-right: 0.5rem;
   mask-image: linear-gradient(to bottom, black 95%, transparent);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.1) transparent;
 }
 
 /* --- TABLE ROWS --- */
@@ -71,6 +73,7 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 0.8rem 1rem;
   transition: all 0.25s ease;
+  margin-bottom: 1rem;
 }
 
 .section-status-row:hover,

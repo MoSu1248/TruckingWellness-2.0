@@ -1,21 +1,21 @@
 .dropDownProfile {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  background: var(--primary-backColor);
-  box-shadow: 14px 17px 40px 4px var(--primary-dropDownShadow);
-  color: inherit;
-  min-width: unset;
-
+  border-radius: 20px;
+  padding: 1rem 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin: 0 !important;
+  right: 10px;
   z-index: 1;
-  border-radius: 10px;
-  border-width: 1px;
-  width: 9%;
-  border: transparent;
-  -webkit-backdrop-filter: blur(63px);
-  backdrop-filter: blur(63px);
-  padding: 15px;
+  top: 22%;
+  max-height: 14rem;
+  width: 20rem;
   position: absolute;
-  border: 1px solid var(--primary-colorTwGrey2-lighter);
 }
 
 .filter-header {
@@ -36,18 +36,23 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.25s ease;
-  width: 3rem;
-  height: 3rem;
-  padding: 1rem;
-  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 0.5rem;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  color: #303030;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .filter-btn-styling:hover {
-  transition: 0.2s ease;
-  font-size: 1.1rem;
-  color: var(--primary-text);
-  font-weight: 600;
+  background: rgba(255, 255, 255, 0.856);
+  transform: translateY(-2px);
+  color: #ef745b;
 }
 
 .filter-icon-styling {

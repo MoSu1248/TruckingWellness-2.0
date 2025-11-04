@@ -57,17 +57,20 @@
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.1) transparent;
 }
 
 .appointment-list-items {
-  background-color: var(--nth-child-back-color);
-  border: 1px solid var(--primary-bottom-border-table);
-  border-radius: 8px;
-  padding: 0.8rem 1rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  transition: 0.3s ease;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  padding: 0.1rem;
+  margin-bottom: 0.8rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+  color: black;
+  text-decoration: none!important;
 }
 
 .appointment-list-items:hover {
@@ -86,12 +89,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  line-height: 1.4;
+
+
 }
 
 .appointmentTimeline-data {
   color: var(--secondary-text-color);
   font-size: 0.85rem;
+  margin: 0;
+  padding: 0.6rem;
 }
 
 .appointmentTimeline-data.date {
@@ -113,7 +119,7 @@
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.action-btn-container{
+.action-btn-container {
   display: flex;
   gap: 0.2rem;
 }

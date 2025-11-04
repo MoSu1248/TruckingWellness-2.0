@@ -15,7 +15,7 @@
   height: 50px;
   line-height: 50px;
   cursor: pointer;
-  color: var(--primary-colorTwGrey2);
+  color: white;
   font-weight: 600;
   margin-top: auto;
   transition: 0.3s ease;
@@ -37,7 +37,7 @@
   border-top-left-radius: 10px ;
   background-color: var(--primary-backColor);
   font-weight: 700;
-  color: var(--primary-Tab-toplink);
+  color: #303030;
   font-size: 1.2rem;
   border-top-right-radius: 10px ;
 }

@@ -1,20 +1,21 @@
-.options {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  background: var(--primary-backColor);
-  box-shadow: var(--primary-contShadow);
-  color: inherit;
-  min-width: unset;
-
-  border-radius: 10px;
-  border-width: 1px;
-  width: 15%;
-  border: transparent;
-  -webkit-backdrop-filter: blur(63px);
-  backdrop-filter: blur(63px);
-  padding: 15px;
+.dash-dropDownProfiles {
+  border-radius: 20px;
+  padding: 1rem 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin: 0 !important;
+  right: 10px;
+  z-index: 1;
+  top: 10px;
+  max-height: 14rem;
+  width: 20rem;
   position: absolute;
-  border: 1px solid var(--primary-colorTwGrey2-lighter);
 }
 
 .options-container {
@@ -28,13 +29,19 @@
   margin: 0;
 }
 
-.RecenetFlagged-container {
+.RecenetFlagged-top-container {
   grid-column: 4 / span 2; /* starts at column 4, spans 2 columns */
-  grid-row: 1 / span 2; /* starts at row 1, spans 2 rows */
+  grid-row: 1 / 2; /* starts at row 1, spans 2 rows */
   width: 100%;
   width: 25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.RecenetFlagged-container {
   border-radius: 60px;
-  padding: 3rem;
+  padding: 1rem 3rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -44,6 +51,7 @@
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   font-family: "Inter", sans-serif;
+  height: 100%;
 }
 
 .RecenetFlagged-container .request-login-heading {
@@ -63,6 +71,7 @@
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+  height: 100%;
 }
 
 .RecenetFlagged-container .bar__negative {

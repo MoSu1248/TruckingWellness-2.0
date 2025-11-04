@@ -26,17 +26,17 @@ export default function AppointFilter({ clientPath, appointmentPath }) {
       </div>
       {openProfile && (
         <div
-          className="flex flex-col options"
+          className="dash-dropDownProfiles"
           onMouseLeave={() => setOpenProfile((prev) => !prev)}
         >
-          <div className="flex flex-col gap-4">
+          <div className="dash-btn-container">
             {/* <input type="text" value={data} onChange={(e) => setData(e.target.value)} /> */}
             <h6 className="filter-header">Options</h6>
-            <Link to={appointmentPath}>
-              <button className="filter-btn-styling"> Appointment</button>
+            <Link className="dash-filter-btn-styling" to={appointmentPath}>
+              Appointment
             </Link>
-            <Link className="" to={clientPath}>
-              <button className="filter-btn-styling">Client Profile</button>
+            <Link className="dash-filter-btn-styling" to={clientPath}>
+              Client Profile
             </Link>
           </div>
         </div>

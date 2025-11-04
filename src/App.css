@@ -35,7 +35,7 @@
   --xn-background: rgba(135, 140, 189, 0.3);
   --nav-after-background: rgba(226, 217, 217, 0.938);
   --css-1f1mtmi-hover: #fdfdfdd0;
-  --online-green: rgb(43, 175, 109);
+  --online-green: rgb(62, 145, 59);
   --table-hover: rgba(222, 226, 230, 0.288);
   --table-header-back: rgba(160, 174, 202, 0.103);
   --loginBackground: rgba(255, 255, 255, 0.7);
@@ -167,9 +167,11 @@
   min-height: 100vh;
   background: #e3e5e6;
   background: linear-gradient(
-    90deg,
-    rgba(227, 229, 230, 1) 0%,
-    rgba(235, 133, 112, 1) 100%
+    120deg,
+    rgb(230, 230, 230) 0%,
+    rgba(209, 80, 54, 0.945) 100%
   );
   overflow: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.1) transparent;
 }

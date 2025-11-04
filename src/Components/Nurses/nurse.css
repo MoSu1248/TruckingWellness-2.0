@@ -248,14 +248,27 @@
 }
 
 .close-btn {
-  font-size: 1.4rem;
-  cursor: pointer;
-  transition: all 0.25s ease;
+  border-radius: 10px;
+  background-color: var(--primary-backColor);
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  font-weight: 700;
+  color: var(--primary-text);
+  transition: 0.3s ease;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  font-size: 1.5rem;
+  border: 1px solid transparent;
+  margin-top: 1rem;
+  position: absolute;
+  left: 10px;
+  top: 0;
 }
 
 .close-btn:hover {
   transform: rotate(90deg);
-  color: crimson;
+  color: #ef745b;
 }
 
 .calender-container {
@@ -423,6 +436,7 @@
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   position: relative;
+  min-width: 22rem;
 }
 
 .nurse-details-container::before {

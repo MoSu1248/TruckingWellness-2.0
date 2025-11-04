@@ -12,18 +12,17 @@ import "./testCharts.css";
 import AppointFilter from "../Filter/DashFilter";
 
 export default function PieChartWithCustomizedLabel() {
-  const [colGroup, setColGroup] = useState();
-  const [field, setField] = useState();
+  const [colGroup, setColGroup] = useState(10);
+  const [field, setField] = useState(90);
   const today = new Date();
   const month = today.toLocaleString("default", { month: "long" });
   const [dataFromChild, setDataFromChild] = useState(month);
-  let currentYear = new Date().getFullYear()
-
+  let currentYear = new Date().getFullYear();
 
   let load2 = async () => {
     getDocs(
       query(
-        collectionGroup(db, " "+currentYear),
+        collectionGroup(db, " " + currentYear),
         where("Month", "==", dataFromChild),
         where("HIV", "==", "No")
       )
@@ -33,7 +32,12 @@ export default function PieChartWithCustomizedLabel() {
     });
 
     getDocs(
-      query(collectionGroup(db, " "+currentYear),where("Month", "==", dataFromChild),where("HIV", "==", "Yes"))).then((querySnapshot) => {
+      query(
+        collectionGroup(db, " " + currentYear),
+        where("Month", "==", dataFromChild),
+        where("HIV", "==", "Yes")
+      )
+    ).then((querySnapshot) => {
       const TotalUsers = querySnapshot.size;
       setColGroup(TotalUsers);
     });
@@ -42,15 +46,14 @@ export default function PieChartWithCustomizedLabel() {
   function handleDataFromChild(data) {
     setDataFromChild(data);
   }
-  
+
   useEffect(() => {
-  
-  load2();
+    load2();
   });
 
   const data = [
-    { label: "HIV Positive", value: 10, color: "#ef745b" },
-    { label: "HIV Negative", value: 80, color: "#ececec3d" },
+    { label: "HIV Positive", value: colGroup, color: "#ef745b" },
+    { label: "HIV Negative", value: field, color: "#ececec3d" },
   ];
 
   const sizing = {
@@ -88,14 +91,14 @@ export default function PieChartWithCustomizedLabel() {
           [`& .${pieArcLabelClasses.root}`]: {
             fill: "white",
             fontSize: 14,
-            strokeWidth:1
+            strokeWidth: 1,
           },
         }}
         style={{
-          fill : `red`,
+          fill: `red`,
           color: `red`,
-          value : 'blueberryTwilight',
-          display: 'inline-block',
+          value: "blueberryTwilight",
+          display: "inline-block",
         }}
         {...sizing}
       />
